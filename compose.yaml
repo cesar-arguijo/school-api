@@ -3,8 +3,11 @@ services:
     image: ${IMAGES_PREFIX:-}app-php
     depends_on:
       - database
+      - mailhog
     restart: unless-stopped
     environment:
+      # Configuración del DSN de Symfony Mailer para usar MailHog
+      MAILER_DSN: smtp://mailhog:1025
       PWA_UPSTREAM: pwa:3000
       SERVER_NAME: ${SERVER_NAME:-localhost}, php:80
       MERCURE_PUBLISHER_JWT_KEY: ${CADDY_MERCURE_JWT_SECRET:-!ChangeThisMercureHubJWTSecretKey!}
@@ -32,6 +35,19 @@ services:
         published: ${HTTP3_PORT:-443}
         protocol: udp
 
+        
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"  # Interfaz web de MailHog en localhost:8025
+      - "1025:1025"  # Puerto SMTP de MailHog para recibir correos
+
+  phpdoc:
+    image: phpdoc/phpdoc:latest
+    volumes:
+      - ./api:/project
+    working_dir: /project
+
   pwa:
     image: ${IMAGES_PREFIX:-}app-pwa
     environment:
@@ -55,6 +71,16 @@ services:
       # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
       # - ./api/docker/db/data:/var/lib/postgresql/data:rw
 ###< doctrine/doctrine-bundle ###
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080  # Puedes cambiar el puerto según tus necesidades
+    environment:
+      ADMINER_DESIGN: "default"  # Puedes cambiar el diseño si lo deseas
+    depends_on:
+      - database  # Asegúrate de que Adminer se inicie después de la base de datos
 
 # Mercure is installed as a Caddy module, prevent the Flex recipe from installing another service
 ###> symfony/mercure-bundle ###

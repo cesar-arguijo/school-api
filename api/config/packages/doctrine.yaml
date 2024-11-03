@@ -16,14 +16,32 @@ doctrine:
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
         auto_mapping: true
         mappings:
-            App:
+            CommonDomain:
                 type: attribute
                 is_bundle: false
-                dir: '%kernel.project_dir%/src/Entity'
-                prefix: 'App\Entity'
-                alias: App
+                dir: '%kernel.project_dir%/src/Domain/Common/Entity'
+                prefix: 'App\Domain\Common\Entity'
+                alias: CommonDomain
+            Audit:
+                type: attribute
+                is_bundle: false
+                dir: '%kernel.project_dir%/src/SharedKernel/Audit'
+                prefix: 'App\SharedKernel\Audit'
+                alias: Audit
+            UserManagement:
+                type: attribute
+                is_bundle: false
+                dir: '%kernel.project_dir%/src/Domain/UserManagement/Entity'
+                prefix: 'App\Domain\UserManagement\Entity'
+                alias: UserManagement
+            UserManagementValueObject:
+                type: attribute
+                is_bundle: false
+                dir: '%kernel.project_dir%/src/Domain/UserManagement/ValueObject'
+                prefix: 'App\Domain\UserManagement\ValueObject'
+                alias: UserManagementValueObject
         controller_resolver:
-            auto_mapping: true
+            auto_mapping: false
 
 when@test:
     doctrine:
