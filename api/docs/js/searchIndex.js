@@ -86,375 +86,450 @@ Search.appendIndex(
             "summary": "Checks\u0020if\u0020an\u0020entity\u0020exists\u0020by\u0020its\u0020identifier.",
             "url": "classes/App-Domain-Common-Repository-BaseEntityRepositoryInterface.html#method_exists"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Device",
-            "name": "Device",
-            "summary": "Entity\u0020representing\u0020a\u0020user\u0020device.",
-            "url": "classes/App-Domain-UserManagement-Entity-Device.html"
+            "fqsen": "\\App\\Infrastructure\\Adapter\\SessionManagerAdapter",
+            "name": "SessionManagerAdapter",
+            "summary": "SessionManagerAdapter",
+            "url": "classes/App-Infrastructure-Adapter-SessionManagerAdapter.html"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Device\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\App\\Infrastructure\\Adapter\\SessionManagerAdapter\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Initializes\u0020a\u0020new\u0020Device\u0020instance.",
-            "url": "classes/App-Domain-UserManagement-Entity-Device.html#method___construct"
+            "summary": "Constructs\u0020a\u0020new\u0020instance\u0020of\u0020SessionManagerAdapter.",
+            "url": "classes/App-Infrastructure-Adapter-SessionManagerAdapter.html#method___construct"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Device\u003A\u003AgetDeviceIdentifier\u0028\u0029",
-            "name": "getDeviceIdentifier",
-            "summary": "Gets\u0020the\u0020device\u0027s\u0020unique\u0020identifier.",
-            "url": "classes/App-Domain-UserManagement-Entity-Device.html#method_getDeviceIdentifier"
+            "fqsen": "\\App\\Infrastructure\\Adapter\\SessionManagerAdapter\u003A\u003AcreateSession\u0028\u0029",
+            "name": "createSession",
+            "summary": "Creates\u0020a\u0020new\u0020session\u0020for\u0020a\u0020user\u0020and\u0020device.",
+            "url": "classes/App-Infrastructure-Adapter-SessionManagerAdapter.html#method_createSession"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Device\u003A\u003AgetDeviceType\u0028\u0029",
-            "name": "getDeviceType",
-            "summary": "Gets\u0020the\u0020type\u0020of\u0020device.",
-            "url": "classes/App-Domain-UserManagement-Entity-Device.html#method_getDeviceType"
+            "fqsen": "\\App\\Infrastructure\\Adapter\\SessionManagerAdapter\u003A\u003A\u0024sessionRepository",
+            "name": "sessionRepository",
+            "summary": "",
+            "url": "classes/App-Infrastructure-Adapter-SessionManagerAdapter.html#property_sessionRepository"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Device\u003A\u003AgetFingerprint\u0028\u0029",
-            "name": "getFingerprint",
-            "summary": "Gets\u0020the\u0020optional\u0020fingerprint\u0020data\u0020for\u0020the\u0020device.",
-            "url": "classes/App-Domain-UserManagement-Entity-Device.html#method_getFingerprint"
+            "fqsen": "\\App\\Infrastructure\\Auth\\Repository\\UserDataAdapter",
+            "name": "UserDataAdapter",
+            "summary": "Adapter\u0020for\u0020UserRepository\u0020to\u0020handle\u0020user\u0020data\u0020in\u0020Auth.",
+            "url": "classes/App-Infrastructure-Auth-Repository-UserDataAdapter.html"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Device\u003A\u003A\u0024deviceIdentifier",
-            "name": "deviceIdentifier",
-            "summary": "A\u0020unique\u0020identifier\u0020for\u0020the\u0020device,\u0020such\u0020as\u0020a\u0020UUID\u0020or\u0020persistent\u0020token.",
-            "url": "classes/App-Domain-UserManagement-Entity-Device.html#property_deviceIdentifier"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Device\u003A\u003A\u0024deviceType",
-            "name": "deviceType",
-            "summary": "Type\u0020of\u0020device\u0020\u0028e.g.,\u0020\u0022mobile\u0022,\u0020\u0022desktop\u0022,\u0020\u0022tablet\u0022\u0029.",
-            "url": "classes/App-Domain-UserManagement-Entity-Device.html#property_deviceType"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Device\u003A\u003A\u0024fingerprint",
-            "name": "fingerprint",
-            "summary": "Optional\u003A\u0020Browser\u0020fingerprint\u0020or\u0020other\u0020identifying\u0020data\u0020for\u0020additional\u0020verification.",
-            "url": "classes/App-Domain-UserManagement-Entity-Device.html#property_fingerprint"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session",
-            "name": "Session",
-            "summary": "Entity\u0020to\u0020manage\u0020user\u0020session\u0020data,\u0020including\u0020device\u0020association\u0020and\u0020expiration.",
-            "url": "classes/App-Domain-UserManagement-Entity-Session.html"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\App\\Infrastructure\\Auth\\Repository\\UserDataAdapter\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Initializes\u0020a\u0020new\u0020Session\u0020object.",
-            "url": "classes/App-Domain-UserManagement-Entity-Session.html#method___construct"
+            "summary": "",
+            "url": "classes/App-Infrastructure-Auth-Repository-UserDataAdapter.html#method___construct"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session\u003A\u003AgetExpiresAt\u0028\u0029",
-            "name": "getExpiresAt",
-            "summary": "Gets\u0020the\u0020expiration\u0020time\u0020of\u0020the\u0020session.",
-            "url": "classes/App-Domain-UserManagement-Entity-Session.html#method_getExpiresAt"
+            "fqsen": "\\App\\Infrastructure\\Auth\\Repository\\UserDataAdapter\u003A\u003AfindById\u0028\u0029",
+            "name": "findById",
+            "summary": "",
+            "url": "classes/App-Infrastructure-Auth-Repository-UserDataAdapter.html#method_findById"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session\u003A\u003AisExpired\u0028\u0029",
-            "name": "isExpired",
-            "summary": "Checks\u0020if\u0020the\u0020session\u0020is\u0020expired.",
-            "url": "classes/App-Domain-UserManagement-Entity-Session.html#method_isExpired"
+            "fqsen": "\\App\\Infrastructure\\Auth\\Repository\\UserDataAdapter\u003A\u003AupdateUserRolePermissions\u0028\u0029",
+            "name": "updateUserRolePermissions",
+            "summary": "",
+            "url": "classes/App-Infrastructure-Auth-Repository-UserDataAdapter.html#method_updateUserRolePermissions"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session\u003A\u003AgetDevice\u0028\u0029",
-            "name": "getDevice",
-            "summary": "Gets\u0020the\u0020device\u0020associated\u0020with\u0020this\u0020session.",
-            "url": "classes/App-Domain-UserManagement-Entity-Session.html#method_getDevice"
+            "fqsen": "\\App\\Infrastructure\\Auth\\Repository\\UserDataAdapter\u003A\u003A\u0024userRepository",
+            "name": "userRepository",
+            "summary": "",
+            "url": "classes/App-Infrastructure-Auth-Repository-UserDataAdapter.html#property_userRepository"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session\u003A\u003A\u0024expiresAt",
-            "name": "expiresAt",
-            "summary": "The\u0020expiration\u0020timestamp\u0020of\u0020the\u0020session.",
-            "url": "classes/App-Domain-UserManagement-Entity-Session.html#property_expiresAt"
+            "fqsen": "\\App\\Infrastructure\\Adapter\\UserManagerAdapter",
+            "name": "UserManagerAdapter",
+            "summary": "UserManagerAdapter",
+            "url": "classes/App-Infrastructure-Adapter-UserManagerAdapter.html"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session\u003A\u003A\u0024device",
-            "name": "device",
-            "summary": "The\u0020associated\u0020device\u0020for\u0020this\u0020session.",
-            "url": "classes/App-Domain-UserManagement-Entity-Session.html#property_device"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User",
-            "name": "User",
-            "summary": "User",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\App\\Infrastructure\\Adapter\\UserManagerAdapter\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Initializes\u0020a\u0020new\u0020instance\u0020with\u0020a\u0020unique\u0020identifier.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method___construct"
+            "summary": "Constructs\u0020a\u0020new\u0020instance\u0020of\u0020UserManagerAdapter.",
+            "url": "classes/App-Infrastructure-Adapter-UserManagerAdapter.html#method___construct"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003AaddSession\u0028\u0029",
-            "name": "addSession",
+            "fqsen": "\\App\\Infrastructure\\Adapter\\UserManagerAdapter\u003A\u003AupdateLastLogin\u0028\u0029",
+            "name": "updateLastLogin",
+            "summary": "Updates\u0020the\u0020last\u0020login\u0020time\u0020for\u0020a\u0020user.",
+            "url": "classes/App-Infrastructure-Adapter-UserManagerAdapter.html#method_updateLastLogin"
+        },                {
+            "fqsen": "\\App\\Infrastructure\\Adapter\\UserManagerAdapter\u003A\u003A\u0024userRepository",
+            "name": "userRepository",
             "summary": "",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method_addSession"
+            "url": "classes/App-Infrastructure-Adapter-UserManagerAdapter.html#property_userRepository"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003AremoveSession\u0028\u0029",
-            "name": "removeSession",
+            "fqsen": "\\App\\Infrastructure\\Auth\\Service\\UserNotificationAdapter",
+            "name": "UserNotificationAdapter",
+            "summary": "Adapter\u0020for\u0020NotificationService\u0020to\u0020handle\u0020notifications\u0020in\u0020Auth.",
+            "url": "classes/App-Infrastructure-Auth-Service-UserNotificationAdapter.html"
+        },                {
+            "fqsen": "\\App\\Infrastructure\\Auth\\Service\\UserNotificationAdapter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
             "summary": "",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method_removeSession"
+            "url": "classes/App-Infrastructure-Auth-Service-UserNotificationAdapter.html#method___construct"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003AcloseAllSessions\u0028\u0029",
-            "name": "closeAllSessions",
+            "fqsen": "\\App\\Infrastructure\\Auth\\Service\\UserNotificationAdapter\u003A\u003AnotifyAdmins\u0028\u0029",
+            "name": "notifyAdmins",
             "summary": "",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method_closeAllSessions"
+            "url": "classes/App-Infrastructure-Auth-Service-UserNotificationAdapter.html#method_notifyAdmins"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003AgetSessions\u0028\u0029",
-            "name": "getSessions",
+            "fqsen": "\\App\\Infrastructure\\Auth\\Service\\UserNotificationAdapter\u003A\u003A\u0024notificationService",
+            "name": "notificationService",
             "summary": "",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method_getSessions"
+            "url": "classes/App-Infrastructure-Auth-Service-UserNotificationAdapter.html#property_notificationService"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003AgetUsername\u0028\u0029",
-            "name": "getUsername",
-            "summary": "Gets\u0020the\u0020username.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method_getUsername"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003AsetUsername\u0028\u0029",
-            "name": "setUsername",
-            "summary": "Sets\u0020the\u0020username.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method_setUsername"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003AgetEmail\u0028\u0029",
-            "name": "getEmail",
-            "summary": "Gets\u0020the\u0020email\u0020address.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method_getEmail"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003AsetEmail\u0028\u0029",
-            "name": "setEmail",
-            "summary": "Sets\u0020the\u0020email\u0020address.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method_setEmail"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003AgetPasswordHash\u0028\u0029",
-            "name": "getPasswordHash",
-            "summary": "Gets\u0020the\u0020hashed\u0020password.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method_getPasswordHash"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003AsetPasswordHash\u0028\u0029",
-            "name": "setPasswordHash",
-            "summary": "Sets\u0020the\u0020password\u0020hash.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method_setPasswordHash"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003AgetRole\u0028\u0029",
-            "name": "getRole",
-            "summary": "Gets\u0020the\u0020role.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method_getRole"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003AsetRole\u0028\u0029",
-            "name": "setRole",
-            "summary": "Sets\u0020the\u0020role.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method_setRole"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003A\u0024isActive",
-            "name": "isActive",
-            "summary": "Status\u0020indicating\u0020if\u0020the\u0020user\u0020is\u0020active.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#property_isActive"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003AsetActive\u0028\u0029",
-            "name": "setActive",
-            "summary": "Sets\u0020the\u0020active\u0020status\u0020of\u0020the\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method_setActive"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003AgetLastLogin\u0028\u0029",
-            "name": "getLastLogin",
-            "summary": "Gets\u0020the\u0020last\u0020login\u0020time.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method_getLastLogin"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003AsetLastLogin\u0028\u0029",
-            "name": "setLastLogin",
-            "summary": "Sets\u0020the\u0020last\u0020login\u0020time.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method_setLastLogin"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003Aregister\u0028\u0029",
-            "name": "register",
-            "summary": "Register\u0020a\u0020new\u0020user\u0020and\u0020raise\u0020the\u0020UserRegistered\u0020event.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#method_register"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003A\u0024username",
-            "name": "username",
-            "summary": "The\u0020username\u0020of\u0020the\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#property_username"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003A\u0024email",
-            "name": "email",
-            "summary": "The\u0020email\u0020address\u0020of\u0020the\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#property_email"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003A\u0024passwordHash",
-            "name": "passwordHash",
-            "summary": "Hashed\u0020password\u0020for\u0020the\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#property_passwordHash"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003A\u0024role",
-            "name": "role",
-            "summary": "Role\u0020of\u0020the\u0020user\u0020in\u0020the\u0020system.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#property_role"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003A\u0024lastLogin",
-            "name": "lastLogin",
-            "summary": "The\u0020last\u0020login\u0020time\u0020of\u0020the\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#property_lastLogin"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\User\u003A\u003A\u0024sessions",
-            "name": "sessions",
-            "summary": "Collection\u0020of\u0020sessions\u0020for\u0020this\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Entity-User.html#property_sessions"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserLoggedIn",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserLoggedIn",
             "name": "UserLoggedIn",
-            "summary": "Event\u0020triggered\u0020when\u0020a\u0020user\u0020logs\u0020in.",
-            "url": "classes/App-Domain-UserManagement-Event-UserLoggedIn.html"
+            "summary": "UserLoggedIn",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserLoggedIn.html"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserLoggedIn\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserLoggedIn\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructs\u0020the\u0020UserLoggedIn\u0020event.",
-            "url": "classes/App-Domain-UserManagement-Event-UserLoggedIn.html#method___construct"
+            "summary": "Initializes\u0020a\u0020new\u0020instance\u0020of\u0020the\u0020UserLoggedIn\u0020event.",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserLoggedIn.html#method___construct"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserLoggedIn\u003A\u003AgetUser\u0028\u0029",
-            "name": "getUser",
-            "summary": "Gets\u0020the\u0020user\u0020associated\u0020with\u0020the\u0020login\u0020event.",
-            "url": "classes/App-Domain-UserManagement-Event-UserLoggedIn.html#method_getUser"
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserLoggedIn\u003A\u003AgetUserId\u0028\u0029",
+            "name": "getUserId",
+            "summary": "Gets\u0020the\u0020unique\u0020identifier\u0020of\u0020the\u0020logged\u002Din\u0020user.",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserLoggedIn.html#method_getUserId"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserLoggedIn\u003A\u003AgetDevice\u0028\u0029",
-            "name": "getDevice",
-            "summary": "Gets\u0020the\u0020device\u0020information\u0020for\u0020the\u0020login\u0020event.",
-            "url": "classes/App-Domain-UserManagement-Event-UserLoggedIn.html#method_getDevice"
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserLoggedIn\u003A\u003AgetDeviceId\u0028\u0029",
+            "name": "getDeviceId",
+            "summary": "Gets\u0020the\u0020unique\u0020identifier\u0020of\u0020the\u0020device\u0020used\u0020for\u0020the\u0020login.",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserLoggedIn.html#method_getDeviceId"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserLoggedIn\u003A\u003AgetTimestamp\u0028\u0029",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserLoggedIn\u003A\u003AgetTimestamp\u0028\u0029",
             "name": "getTimestamp",
-            "summary": "Gets\u0020the\u0020login\u0020timestamp.",
-            "url": "classes/App-Domain-UserManagement-Event-UserLoggedIn.html#method_getTimestamp"
+            "summary": "Gets\u0020the\u0020timestamp\u0020of\u0020the\u0020login\u0020event.",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserLoggedIn.html#method_getTimestamp"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserLoggedIn\u003A\u003A\u0024user",
-            "name": "user",
-            "summary": "The\u0020user\u0020who\u0020logged\u0020in.",
-            "url": "classes/App-Domain-UserManagement-Event-UserLoggedIn.html#property_user"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserLoggedIn\u003A\u003A\u0024device",
-            "name": "device",
-            "summary": "The\u0020device\u0020used\u0020during\u0020login.",
-            "url": "classes/App-Domain-UserManagement-Event-UserLoggedIn.html#property_device"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserLoggedIn\u003A\u003A\u0024timestamp",
-            "name": "timestamp",
-            "summary": "The\u0020timestamp\u0020of\u0020the\u0020login.",
-            "url": "classes/App-Domain-UserManagement-Event-UserLoggedIn.html#property_timestamp"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserRegistered",
-            "name": "UserRegistered",
-            "summary": "Event\u0020triggered\u0020when\u0020a\u0020new\u0020user\u0020registers\u0020in\u0020the\u0020system.",
-            "url": "classes/App-Domain-UserManagement-Event-UserRegistered.html"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserRegistered\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Initializes\u0020a\u0020new\u0020UserRegistered\u0020event\u0020instance.",
-            "url": "classes/App-Domain-UserManagement-Event-UserRegistered.html#method___construct"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserRegistered\u003A\u003AgetUserId\u0028\u0029",
-            "name": "getUserId",
-            "summary": "Gets\u0020the\u0020unique\u0020identifier\u0020of\u0020the\u0020registered\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Event-UserRegistered.html#method_getUserId"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserRegistered\u003A\u003AgetUsername\u0028\u0029",
-            "name": "getUsername",
-            "summary": "Gets\u0020the\u0020username\u0020of\u0020the\u0020registered\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Event-UserRegistered.html#method_getUsername"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserRegistered\u003A\u003AgetEmail\u0028\u0029",
-            "name": "getEmail",
-            "summary": "Gets\u0020the\u0020email\u0020address\u0020of\u0020the\u0020registered\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Event-UserRegistered.html#method_getEmail"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserRegistered\u003A\u003A\u0024userId",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserLoggedIn\u003A\u003A\u0024userId",
             "name": "userId",
-            "summary": "The\u0020unique\u0020identifier\u0020of\u0020the\u0020registered\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Event-UserRegistered.html#property_userId"
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserLoggedIn.html#property_userId"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserRegistered\u003A\u003A\u0024username",
-            "name": "username",
-            "summary": "The\u0020username\u0020of\u0020the\u0020registered\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Event-UserRegistered.html#property_username"
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserLoggedIn\u003A\u003A\u0024deviceId",
+            "name": "deviceId",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserLoggedIn.html#property_deviceId"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserRegistered\u003A\u003A\u0024email",
-            "name": "email",
-            "summary": "The\u0020email\u0020address\u0020of\u0020the\u0020registered\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Event-UserRegistered.html#property_email"
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserLoggedIn\u003A\u003A\u0024timestamp",
+            "name": "timestamp",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserLoggedIn.html#property_timestamp"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserRoleChanged",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserRoleChanged",
             "name": "UserRoleChanged",
-            "summary": "Event\u0020triggered\u0020when\u0020a\u0020user\u0027s\u0020role\u0020is\u0020changed.",
-            "url": "classes/App-Domain-UserManagement-Event-UserRoleChanged.html"
+            "summary": "Event\u0020UserRoleChanged",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserRoleChanged.html"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserRoleChanged\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserRoleChanged\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Initializes\u0020a\u0020new\u0020instance\u0020of\u0020the\u0020UserRoleChanged\u0020event.",
-            "url": "classes/App-Domain-UserManagement-Event-UserRoleChanged.html#method___construct"
+            "summary": "Constructs\u0020a\u0020UserRoleChanged\u0020event.",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserRoleChanged.html#method___construct"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserRoleChanged\u003A\u003AgetUserId\u0028\u0029",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserRoleChanged\u003A\u003AgetUserId\u0028\u0029",
             "name": "getUserId",
-            "summary": "Gets\u0020the\u0020ID\u0020of\u0020the\u0020user\u0020whose\u0020role\u0020has\u0020changed.",
-            "url": "classes/App-Domain-UserManagement-Event-UserRoleChanged.html#method_getUserId"
+            "summary": "Gets\u0020the\u0020user\u0020ID.",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserRoleChanged.html#method_getUserId"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserRoleChanged\u003A\u003AgetNewRole\u0028\u0029",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserRoleChanged\u003A\u003AgetNewRole\u0028\u0029",
             "name": "getNewRole",
             "summary": "Gets\u0020the\u0020new\u0020role\u0020assigned\u0020to\u0020the\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Event-UserRoleChanged.html#method_getNewRole"
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserRoleChanged.html#method_getNewRole"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserRoleChanged\u003A\u003AgetOldRole\u0028\u0029",
-            "name": "getOldRole",
-            "summary": "Gets\u0020the\u0020previous\u0020role\u0020assigned\u0020to\u0020the\u0020user,\u0020if\u0020available.",
-            "url": "classes/App-Domain-UserManagement-Event-UserRoleChanged.html#method_getOldRole"
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserRoleChanged\u003A\u003AgetPreviousRole\u0028\u0029",
+            "name": "getPreviousRole",
+            "summary": "Gets\u0020the\u0020previous\u0020role\u0020of\u0020the\u0020user.",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserRoleChanged.html#method_getPreviousRole"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserRoleChanged\u003A\u003A\u0024userId",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserRoleChanged\u003A\u003AgetTimestamp\u0028\u0029",
+            "name": "getTimestamp",
+            "summary": "Gets\u0020the\u0020timestamp\u0020of\u0020the\u0020role\u0020change.",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserRoleChanged.html#method_getTimestamp"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserRoleChanged\u003A\u003A\u0024userId",
             "name": "userId",
-            "summary": "The\u0020unique\u0020identifier\u0020of\u0020the\u0020user\u0020whose\u0020role\u0020has\u0020changed.",
-            "url": "classes/App-Domain-UserManagement-Event-UserRoleChanged.html#property_userId"
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserRoleChanged.html#property_userId"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserRoleChanged\u003A\u003A\u0024newRole",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserRoleChanged\u003A\u003A\u0024newRole",
             "name": "newRole",
-            "summary": "The\u0020new\u0020role\u0020assigned\u0020to\u0020the\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Event-UserRoleChanged.html#property_newRole"
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserRoleChanged.html#property_newRole"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Event\\UserRoleChanged\u003A\u003A\u0024oldRole",
-            "name": "oldRole",
-            "summary": "The\u0020previous\u0020role\u0020assigned\u0020to\u0020the\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Event-UserRoleChanged.html#property_oldRole"
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserRoleChanged\u003A\u003A\u0024previousRole",
+            "name": "previousRole",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserRoleChanged.html#property_previousRole"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Handler\\Event\\UserLoggedInHandler",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event\\UserRoleChanged\u003A\u003A\u0024timestamp",
+            "name": "timestamp",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Auth-Event-UserRoleChanged.html#property_timestamp"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Handler\\UserLoggedInHandler",
             "name": "UserLoggedInHandler",
-            "summary": "Handler\u0020for\u0020the\u0020UserLoggedIn\u0020event.",
-            "url": "classes/App-Domain-UserManagement-Handler-Event-UserLoggedInHandler.html"
+            "summary": "UserLoggedInHandler",
+            "url": "classes/App-Domain-UserManagement-Auth-Handler-UserLoggedInHandler.html"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Handler\\Event\\UserLoggedInHandler\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Handler\\UserLoggedInHandler\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructs\u0020the\u0020UserLoggedInHandler\u0020with\u0020the\u0020necessary\u0020dependencies.",
-            "url": "classes/App-Domain-UserManagement-Handler-Event-UserLoggedInHandler.html#method___construct"
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Auth-Handler-UserLoggedInHandler.html#method___construct"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Handler\\Event\\UserLoggedInHandler\u003A\u003Ahandle\u0028\u0029",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Handler\\UserLoggedInHandler\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Auth-Handler-UserLoggedInHandler.html#method___invoke"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Handler\\UserLoggedInHandler\u003A\u003A\u0024loginService",
+            "name": "loginService",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Auth-Handler-UserLoggedInHandler.html#property_loginService"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Handler\\UserRoleChangedHandler",
+            "name": "UserRoleChangedHandler",
+            "summary": "Event\u0020Handler\u0020for\u0020UserRoleChanged",
+            "url": "classes/App-Domain-UserManagement-Auth-Handler-UserRoleChangedHandler.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Handler\\UserRoleChangedHandler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructs\u0020a\u0020new\u0020UserRoleChangedHandler.",
+            "url": "classes/App-Domain-UserManagement-Auth-Handler-UserRoleChangedHandler.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Handler\\UserRoleChangedHandler\u003A\u003Ahandle\u0028\u0029",
             "name": "handle",
-            "summary": "Handles\u0020the\u0020UserLoggedIn\u0020event.",
-            "url": "classes/App-Domain-UserManagement-Handler-Event-UserLoggedInHandler.html#method_handle"
+            "summary": "Handles\u0020the\u0020UserRoleChanged\u0020event.",
+            "url": "classes/App-Domain-UserManagement-Auth-Handler-UserRoleChangedHandler.html#method_handle"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Handler\\Event\\UserLoggedInHandler\u003A\u003A\u0024entityManager",
-            "name": "entityManager",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Handler\\UserRoleChangedHandler\u003A\u003A\u0024notificationService",
+            "name": "notificationService",
             "summary": "",
-            "url": "classes/App-Domain-UserManagement-Handler-Event-UserLoggedInHandler.html#property_entityManager"
+            "url": "classes/App-Domain-UserManagement-Auth-Handler-UserRoleChangedHandler.html#property_notificationService"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Handler\\Event\\UserLoggedInHandler\u003A\u003A\u0024sessionService",
-            "name": "sessionService",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Handler\\UserRoleChangedHandler\u003A\u003A\u0024userRepository",
+            "name": "userRepository",
             "summary": "",
-            "url": "classes/App-Domain-UserManagement-Handler-Event-UserLoggedInHandler.html#property_sessionService"
+            "url": "classes/App-Domain-UserManagement-Auth-Handler-UserRoleChangedHandler.html#property_userRepository"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Handler\\Event\\UserLoggedInHandler\u003A\u003A\u0024alertService",
-            "name": "alertService",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Handler\\UserRoleChangedHandler\u003A\u003A\u0024logger",
+            "name": "logger",
             "summary": "",
-            "url": "classes/App-Domain-UserManagement-Handler-Event-UserLoggedInHandler.html#property_alertService"
+            "url": "classes/App-Domain-UserManagement-Auth-Handler-UserRoleChangedHandler.html#property_logger"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\UserRegisteredHandler",
-            "name": "UserRegisteredHandler",
-            "summary": "Handles\u0020actions\u0020to\u0020be\u0020taken\u0020when\u0020a\u0020UserRegistered\u0020event\u0020is\u0020dispatched.",
-            "url": "classes/App-Domain-UserManagement-EventHandler-UserRegisteredHandler.html"
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Service\\Interface\\SessionManagerInterface",
+            "name": "SessionManagerInterface",
+            "summary": "SessionManagerInterface",
+            "url": "classes/App-Domain-UserManagement-Auth-Service-Interface-SessionManagerInterface.html"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\UserRegisteredHandler\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Service\\Interface\\SessionManagerInterface\u003A\u003AcreateSession\u0028\u0029",
+            "name": "createSession",
+            "summary": "Creates\u0020a\u0020new\u0020session\u0020for\u0020a\u0020user\u0020associated\u0020with\u0020a\u0020specific\u0020device.",
+            "url": "classes/App-Domain-UserManagement-Auth-Service-Interface-SessionManagerInterface.html#method_createSession"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Repository\\UserDataInterface",
+            "name": "UserDataInterface",
+            "summary": "Interface\u0020for\u0020managing\u0020user\u0020data,\u0020including\u0020role\u0020and\u0020permission\u0020updates.",
+            "url": "classes/App-Domain-UserManagement-Auth-Repository-UserDataInterface.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Repository\\UserDataInterface\u003A\u003AfindById\u0028\u0029",
+            "name": "findById",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Auth-Repository-UserDataInterface.html#method_findById"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Repository\\UserDataInterface\u003A\u003AupdateUserRolePermissions\u0028\u0029",
+            "name": "updateUserRolePermissions",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Auth-Repository-UserDataInterface.html#method_updateUserRolePermissions"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Service\\Interface\\UserNotificationInterface",
+            "name": "UserNotificationInterface",
+            "summary": "Interface\u0020for\u0020notifying\u0020administrators\u0020of\u0020user\u0020role\u0020changes.",
+            "url": "classes/App-Domain-UserManagement-Auth-Service-Interface-UserNotificationInterface.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Service\\Interface\\UserNotificationInterface\u003A\u003AnotifyAdmins\u0028\u0029",
+            "name": "notifyAdmins",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Auth-Service-Interface-UserNotificationInterface.html#method_notifyAdmins"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Service\\LoginService",
+            "name": "LoginService",
+            "summary": "LoginService",
+            "url": "classes/App-Domain-UserManagement-Auth-Service-LoginService.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Service\\LoginService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructs\u0020a\u0020new\u0020instance\u0020of\u0020LoginService.",
+            "url": "classes/App-Domain-UserManagement-Auth-Service-LoginService.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Service\\LoginService\u003A\u003AhandleUserLogin\u0028\u0029",
+            "name": "handleUserLogin",
+            "summary": "Handles\u0020user\u0020login\u0020by\u0020updating\u0020the\u0020last\u0020login\u0020time\u0020and\u0020creating\u0020a\u0020session.",
+            "url": "classes/App-Domain-UserManagement-Auth-Service-LoginService.html#method_handleUserLogin"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Service\\LoginService\u003A\u003A\u0024sessionManager",
+            "name": "sessionManager",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Auth-Service-LoginService.html#property_sessionManager"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Service\\LoginService\u003A\u003A\u0024userManager",
+            "name": "userManager",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Auth-Service-LoginService.html#property_userManager"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\ValueObject\\Role",
+            "name": "Role",
+            "summary": "Value\u0020Object\u0020to\u0020define\u0020user\u0020roles.",
+            "url": "classes/App-Domain-UserManagement-Auth-ValueObject-Role.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\ValueObject\\Role\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Initializes\u0020the\u0020Role\u0020object\u0020and\u0020validates\u0020it.",
+            "url": "classes/App-Domain-UserManagement-Auth-ValueObject-Role.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\ValueObject\\Role\u003A\u003AgetRole\u0028\u0029",
+            "name": "getRole",
+            "summary": "Returns\u0020the\u0020role\u0020of\u0020the\u0020user.",
+            "url": "classes/App-Domain-UserManagement-Auth-ValueObject-Role.html#method_getRole"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\ValueObject\\Role\u003A\u003AisEqual\u0028\u0029",
+            "name": "isEqual",
+            "summary": "Checks\u0020if\u0020this\u0020role\u0020is\u0020equal\u0020to\u0020another\u0020role.",
+            "url": "classes/App-Domain-UserManagement-Auth-ValueObject-Role.html#method_isEqual"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\ValueObject\\Role\u003A\u003AisAdmin\u0028\u0029",
+            "name": "isAdmin",
+            "summary": "Checks\u0020if\u0020the\u0020role\u0020is\u0020\u0027ROLE_ADMIN\u0027.",
+            "url": "classes/App-Domain-UserManagement-Auth-ValueObject-Role.html#method_isAdmin"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\ValueObject\\Role\u003A\u003AisTeacher\u0028\u0029",
+            "name": "isTeacher",
+            "summary": "Checks\u0020if\u0020the\u0020role\u0020is\u0020\u0027ROLE_TEACHER\u0027.",
+            "url": "classes/App-Domain-UserManagement-Auth-ValueObject-Role.html#method_isTeacher"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\ValueObject\\Role\u003A\u003AisSuperAdmin\u0028\u0029",
+            "name": "isSuperAdmin",
+            "summary": "Checks\u0020if\u0020the\u0020role\u0020is\u0020\u0027ROLE_THIRD_LEVEL_TEACHER\u0027.",
+            "url": "classes/App-Domain-UserManagement-Auth-ValueObject-Role.html#method_isSuperAdmin"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\ValueObject\\Role\u003A\u003AisPrincipal\u0028\u0029",
+            "name": "isPrincipal",
+            "summary": "Checks\u0020if\u0020the\u0020role\u0020is\u0020\u0027ROLE_PRINCIPAL\u0027.",
+            "url": "classes/App-Domain-UserManagement-Auth-ValueObject-Role.html#method_isPrincipal"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\ValueObject\\Role\u003A\u003AALLOWED_ROLES",
+            "name": "ALLOWED_ROLES",
+            "summary": "List\u0020of\u0020allowed\u0020roles\u0020in\u0020the\u0020system.",
+            "url": "classes/App-Domain-UserManagement-Auth-ValueObject-Role.html#constant_ALLOWED_ROLES"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\ValueObject\\Role\u003A\u003A\u0024role",
+            "name": "role",
+            "summary": "The\u0020role\u0020of\u0020the\u0020user.",
+            "url": "classes/App-Domain-UserManagement-Auth-ValueObject-Role.html#property_role"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\NewDeviceDetected",
+            "name": "NewDeviceDetected",
+            "summary": "Event\u0020triggered\u0020when\u0020a\u0020user\u0020logs\u0020in\u0020from\u0020a\u0020new\u0020device.",
+            "url": "classes/App-Domain-UserManagement-Event-NewDeviceDetected.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\NewDeviceDetected\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Constructor.",
-            "url": "classes/App-Domain-UserManagement-EventHandler-UserRegisteredHandler.html#method___construct"
+            "url": "classes/App-Domain-UserManagement-Event-NewDeviceDetected.html#method___construct"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\UserRegisteredHandler\u003A\u003A__invoke\u0028\u0029",
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\NewDeviceDetected\u003A\u003AgetUser\u0028\u0029",
+            "name": "getUser",
+            "summary": "Gets\u0020the\u0020user\u0020ID.",
+            "url": "classes/App-Domain-UserManagement-Event-NewDeviceDetected.html#method_getUser"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\NewDeviceDetected\u003A\u003AgetDevice\u0028\u0029",
+            "name": "getDevice",
+            "summary": "Gets\u0020the\u0020device\u0020type.",
+            "url": "classes/App-Domain-UserManagement-Event-NewDeviceDetected.html#method_getDevice"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\NewDeviceDetected\u003A\u003AgetTimestamp\u0028\u0029",
+            "name": "getTimestamp",
+            "summary": "Gets\u0020the\u0020event\u0020timestamp.",
+            "url": "classes/App-Domain-UserManagement-Event-NewDeviceDetected.html#method_getTimestamp"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\NewDeviceDetected\u003A\u003A\u0024user",
+            "name": "user",
+            "summary": "The\u0020ID\u0020of\u0020the\u0020user\u0020who\u0020logged\u0020in\u0020from\u0020a\u0020new\u0020device.",
+            "url": "classes/App-Domain-UserManagement-Event-NewDeviceDetected.html#property_user"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\NewDeviceDetected\u003A\u003A\u0024device",
+            "name": "device",
+            "summary": "Type\u0020of\u0020the\u0020new\u0020device\u0020detected\u0020\u0028e.g.,\u0020mobile,\u0020desktop\u0029.",
+            "url": "classes/App-Domain-UserManagement-Event-NewDeviceDetected.html#property_device"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\NewDeviceDetected\u003A\u003A\u0024timestamp",
+            "name": "timestamp",
+            "summary": "Timestamp\u0020of\u0020the\u0020device\u0020detection\u0020event.",
+            "url": "classes/App-Domain-UserManagement-Event-NewDeviceDetected.html#property_timestamp"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\PasswordChanged",
+            "name": "PasswordChanged",
+            "summary": "Event\u0020triggered\u0020when\u0020a\u0020user\u0020changes\u0020their\u0020password.",
+            "url": "classes/App-Domain-UserManagement-Event-PasswordChanged.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\PasswordChanged\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructs\u0020a\u0020new\u0020PasswordChanged\u0020event.",
+            "url": "classes/App-Domain-UserManagement-Event-PasswordChanged.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\PasswordChanged\u003A\u003AgetUserId\u0028\u0029",
+            "name": "getUserId",
+            "summary": "Gets\u0020the\u0020user\u0020ID\u0020associated\u0020with\u0020this\u0020event.",
+            "url": "classes/App-Domain-UserManagement-Event-PasswordChanged.html#method_getUserId"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\PasswordChanged\u003A\u003AgetTimestamp\u0028\u0029",
+            "name": "getTimestamp",
+            "summary": "Gets\u0020the\u0020timestamp\u0020of\u0020when\u0020the\u0020password\u0020change\u0020occurred.",
+            "url": "classes/App-Domain-UserManagement-Event-PasswordChanged.html#method_getTimestamp"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\PasswordChanged\u003A\u003A\u0024userId",
+            "name": "userId",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Event-PasswordChanged.html#property_userId"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\PasswordChanged\u003A\u003A\u0024timestamp",
+            "name": "timestamp",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Event-PasswordChanged.html#property_timestamp"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\NewDeviceDetectedHandler",
+            "name": "NewDeviceDetectedHandler",
+            "summary": "Handles\u0020the\u0020NewDeviceDetected\u0020event\u0020by\u0020notifying\u0020the\u0020user\u0020of\u0020a\u0020new\u0020device\u0020login.",
+            "url": "classes/App-Domain-UserManagement-EventHandler-NewDeviceDetectedHandler.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\NewDeviceDetectedHandler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/App-Domain-UserManagement-EventHandler-NewDeviceDetectedHandler.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\NewDeviceDetectedHandler\u003A\u003A__invoke\u0028\u0029",
             "name": "__invoke",
-            "summary": "Handles\u0020the\u0020UserRegistered\u0020event\u0020by\u0020sending\u0020a\u0020welcome\u0020email.",
-            "url": "classes/App-Domain-UserManagement-EventHandler-UserRegisteredHandler.html#method___invoke"
+            "summary": "Invokes\u0020the\u0020handler\u0020to\u0020alert\u0020the\u0020user\u0020of\u0020a\u0020new\u0020device\u0020login.",
+            "url": "classes/App-Domain-UserManagement-EventHandler-NewDeviceDetectedHandler.html#method___invoke"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\UserRegisteredHandler\u003A\u003A\u0024emailService",
-            "name": "emailService",
-            "summary": "Service\u0020for\u0020sending\u0020emails.",
-            "url": "classes/App-Domain-UserManagement-EventHandler-UserRegisteredHandler.html#property_emailService"
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\NewDeviceDetectedHandler\u003A\u003A\u0024notificationService",
+            "name": "notificationService",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-EventHandler-NewDeviceDetectedHandler.html#property_notificationService"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\PasswordChangedHandler",
+            "name": "PasswordChangedHandler",
+            "summary": "Handles\u0020actions\u0020to\u0020be\u0020taken\u0020when\u0020a\u0020PasswordChanged\u0020event\u0020is\u0020dispatched.",
+            "url": "classes/App-Domain-UserManagement-EventHandler-PasswordChangedHandler.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\PasswordChangedHandler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/App-Domain-UserManagement-EventHandler-PasswordChangedHandler.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\PasswordChangedHandler\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "Invoked\u0020when\u0020PasswordChanged\u0020event\u0020is\u0020dispatched.\u0020Sends\u0020a\u0020notification.",
+            "url": "classes/App-Domain-UserManagement-EventHandler-PasswordChangedHandler.html#method___invoke"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\PasswordChangedHandler\u003A\u003A\u0024notificationService",
+            "name": "notificationService",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-EventHandler-PasswordChangedHandler.html#property_notificationService"
         },                {
             "fqsen": "\\App\\Domain\\UserManagement\\Service\\AlertService",
             "name": "AlertService",
@@ -476,31 +551,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/App-Domain-UserManagement-Service-AlertService.html#property_mailerService"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Service\\EmailService",
-            "name": "EmailService",
-            "summary": "Service\u0020for\u0020handling\u0020email\u002Drelated\u0020operations\u0020within\u0020the\u0020application.",
-            "url": "classes/App-Domain-UserManagement-Service-EmailService.html"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Service\\EmailService\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Constructs\u0020the\u0020EmailService\u0020with\u0020the\u0020specified\u0020MailerService.",
-            "url": "classes/App-Domain-UserManagement-Service-EmailService.html#method___construct"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Service\\EmailService\u003A\u003AsendWelcomeEmail\u0028\u0029",
-            "name": "sendWelcomeEmail",
-            "summary": "Sends\u0020a\u0020welcome\u0020email\u0020to\u0020a\u0020newly\u0020registered\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Service-EmailService.html#method_sendWelcomeEmail"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Service\\EmailService\u003A\u003AsendPasswordResetEmail\u0028\u0029",
-            "name": "sendPasswordResetEmail",
-            "summary": "Sends\u0020a\u0020password\u0020reset\u0020email\u0020to\u0020a\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Service-EmailService.html#method_sendPasswordResetEmail"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Service\\EmailService\u003A\u003A\u0024mailerService",
-            "name": "mailerService",
-            "summary": "",
-            "url": "classes/App-Domain-UserManagement-Service-EmailService.html#property_mailerService"
-        },                {
             "fqsen": "\\App\\Domain\\UserManagement\\Service\\NotificationService",
             "name": "NotificationService",
             "summary": "Service\u0020for\u0020handling\u0020notifications\u0020within\u0020the\u0020application.",
@@ -516,140 +566,810 @@ Search.appendIndex(
             "summary": "Sends\u0020a\u0020notification\u0020to\u0020the\u0020administrators.",
             "url": "classes/App-Domain-UserManagement-Service-NotificationService.html#method_notifyAdmins"
         },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\NotificationService\u003A\u003AnotifyPasswordChange\u0028\u0029",
+            "name": "notifyPasswordChange",
+            "summary": "Notifies\u0020the\u0020user\u0020of\u0020a\u0020password\u0020change.",
+            "url": "classes/App-Domain-UserManagement-Service-NotificationService.html#method_notifyPasswordChange"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\NotificationService\u003A\u003AnotifyNewDeviceDetected\u0028\u0029",
+            "name": "notifyNewDeviceDetected",
+            "summary": "Sends\u0020a\u0020notification\u0020to\u0020the\u0020user\u0020when\u0020a\u0020new\u0020device\u0020is\u0020detected.",
+            "url": "classes/App-Domain-UserManagement-Service-NotificationService.html#method_notifyNewDeviceDetected"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\NotificationService\u003A\u003AgetUserEmailById\u0028\u0029",
+            "name": "getUserEmailById",
+            "summary": "Retrieves\u0020the\u0020user\u0020email\u0020by\u0020their\u0020ID.",
+            "url": "classes/App-Domain-UserManagement-Service-NotificationService.html#method_getUserEmailById"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\NotificationService\u003A\u003AnotifySessionLimitExceeded\u0028\u0029",
+            "name": "notifySessionLimitExceeded",
+            "summary": "Sends\u0020a\u0020notification\u0020to\u0020the\u0020user\u0020when\u0020their\u0020session\u0020limit\u0020is\u0020exceeded.",
+            "url": "classes/App-Domain-UserManagement-Service-NotificationService.html#method_notifySessionLimitExceeded"
+        },                {
             "fqsen": "\\App\\Domain\\UserManagement\\Service\\NotificationService\u003A\u003A\u0024logger",
             "name": "logger",
             "summary": "Logger\u0020for\u0020recording\u0020notification\u0020events.",
             "url": "classes/App-Domain-UserManagement-Service-NotificationService.html#property_logger"
         },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\NotificationService\u003A\u003A\u0024mailerService",
+            "name": "mailerService",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Service-NotificationService.html#property_mailerService"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\NotificationService\u003A\u003A\u0024userRepository",
+            "name": "userRepository",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Service-NotificationService.html#property_userRepository"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session",
+            "name": "Session",
+            "summary": "Entity\u0020to\u0020manage\u0020user\u0020session\u0020data,\u0020including\u0020device\u0020association\u0020and\u0020expiration.",
+            "url": "classes/App-Domain-UserManagement-Entity-Session.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Initializes\u0020a\u0020new\u0020Session\u0020object.",
+            "url": "classes/App-Domain-UserManagement-Entity-Session.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session\u003A\u003AgetExpiresAt\u0028\u0029",
+            "name": "getExpiresAt",
+            "summary": "Gets\u0020the\u0020expiration\u0020time\u0020of\u0020the\u0020session.",
+            "url": "classes/App-Domain-UserManagement-Entity-Session.html#method_getExpiresAt"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session\u003A\u003AisExpired\u0028\u0029",
+            "name": "isExpired",
+            "summary": "Checks\u0020if\u0020the\u0020session\u0020is\u0020expired\u0020or\u0020has\u0020been\u0020explicitly\u0020ended.",
+            "url": "classes/App-Domain-UserManagement-Entity-Session.html#method_isExpired"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session\u003A\u003AgetDevice\u0028\u0029",
+            "name": "getDevice",
+            "summary": "Gets\u0020the\u0020device\u0020associated\u0020with\u0020this\u0020session.",
+            "url": "classes/App-Domain-UserManagement-Entity-Session.html#method_getDevice"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session\u003A\u003Aequals\u0028\u0029",
+            "name": "equals",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Entity-Session.html#method_equals"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session\u003A\u003Aend\u0028\u0029",
+            "name": "end",
+            "summary": "Ends\u0020the\u0020session\u0020by\u0020setting\u0020the\u0020ended\u0020timestamp.",
+            "url": "classes/App-Domain-UserManagement-Entity-Session.html#method_end"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session\u003A\u003AgetEndedAt\u0028\u0029",
+            "name": "getEndedAt",
+            "summary": "Gets\u0020the\u0020end\u0020time\u0020of\u0020the\u0020session,\u0020if\u0020it\u0020has\u0020ended.",
+            "url": "classes/App-Domain-UserManagement-Entity-Session.html#method_getEndedAt"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session\u003A\u003A\u0024expiresAt",
+            "name": "expiresAt",
+            "summary": "The\u0020expiration\u0020timestamp\u0020of\u0020the\u0020session.",
+            "url": "classes/App-Domain-UserManagement-Entity-Session.html#property_expiresAt"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session\u003A\u003A\u0024endedAt",
+            "name": "endedAt",
+            "summary": "The\u0020timestamp\u0020when\u0020the\u0020session\u0020ended.",
+            "url": "classes/App-Domain-UserManagement-Entity-Session.html#property_endedAt"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Entity\\Session\u003A\u003A\u0024device",
+            "name": "device",
+            "summary": "The\u0020associated\u0020device\u0020for\u0020this\u0020session.",
+            "url": "classes/App-Domain-UserManagement-Entity-Session.html#property_device"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionEnded",
+            "name": "SessionEnded",
+            "summary": "Event\u0020emitted\u0020when\u0020a\u0020session\u0020ends.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionEnded.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionEnded\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionEnded.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionEnded\u003A\u003AgetUser\u0028\u0029",
+            "name": "getUser",
+            "summary": "Gets\u0020the\u0020user\u0020ID.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionEnded.html#method_getUser"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionEnded\u003A\u003AgetSession\u0028\u0029",
+            "name": "getSession",
+            "summary": "Gets\u0020the\u0020session\u0020ID.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionEnded.html#method_getSession"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionEnded\u003A\u003AgetTimestamp\u0028\u0029",
+            "name": "getTimestamp",
+            "summary": "Gets\u0020the\u0020timestamp\u0020of\u0020session\u0020termination.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionEnded.html#method_getTimestamp"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionEnded\u003A\u003A\u0024user",
+            "name": "user",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Event-SessionEnded.html#property_user"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionEnded\u003A\u003A\u0024session",
+            "name": "session",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Event-SessionEnded.html#property_session"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionEnded\u003A\u003A\u0024timestamp",
+            "name": "timestamp",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Event-SessionEnded.html#property_timestamp"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionLimitExceeded",
+            "name": "SessionLimitExceeded",
+            "summary": "Event\u0020triggered\u0020when\u0020a\u0020user\u0027s\u0020active\u0020session\u0020limit\u0020is\u0020exceeded.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionLimitExceeded.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionLimitExceeded\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionLimitExceeded.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionLimitExceeded\u003A\u003AgetUser\u0028\u0029",
+            "name": "getUser",
+            "summary": "Gets\u0020the\u0020user\u0020ID.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionLimitExceeded.html#method_getUser"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionLimitExceeded\u003A\u003AgetLimit\u0028\u0029",
+            "name": "getLimit",
+            "summary": "Gets\u0020the\u0020session\u0020limit.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionLimitExceeded.html#method_getLimit"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionLimitExceeded\u003A\u003AgetTimestamp\u0028\u0029",
+            "name": "getTimestamp",
+            "summary": "Gets\u0020the\u0020event\u0020timestamp.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionLimitExceeded.html#method_getTimestamp"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionLimitExceeded\u003A\u003A\u0024user",
+            "name": "user",
+            "summary": "The\u0020ID\u0020of\u0020the\u0020user\u0020who\u0020exceeded\u0020the\u0020session\u0020limit.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionLimitExceeded.html#property_user"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionLimitExceeded\u003A\u003A\u0024limit",
+            "name": "limit",
+            "summary": "The\u0020maximum\u0020allowed\u0020active\u0020sessions.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionLimitExceeded.html#property_limit"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionLimitExceeded\u003A\u003A\u0024timestamp",
+            "name": "timestamp",
+            "summary": "Timestamp\u0020of\u0020when\u0020the\u0020session\u0020limit\u0020was\u0020exceeded.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionLimitExceeded.html#property_timestamp"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionStarted",
+            "name": "SessionStarted",
+            "summary": "Event\u0020triggered\u0020when\u0020a\u0020new\u0020user\u0020session\u0020begins.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionStarted.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionStarted\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructs\u0020the\u0020SessionStarted\u0020event.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionStarted.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionStarted\u003A\u003AgetUser\u0028\u0029",
+            "name": "getUser",
+            "summary": "Gets\u0020the\u0020user\u0020ID\u0020of\u0020the\u0020user\u0020starting\u0020the\u0020session.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionStarted.html#method_getUser"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionStarted\u003A\u003AgetSession\u0028\u0029",
+            "name": "getSession",
+            "summary": "Gets\u0020the\u0020device\u0020used\u0020for\u0020the\u0020session.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionStarted.html#method_getSession"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionStarted\u003A\u003AgetDeviceType\u0028\u0029",
+            "name": "getDeviceType",
+            "summary": "Gets\u0020the\u0020type\u0020of\u0020device\u0020for\u0020the\u0020session.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionStarted.html#method_getDeviceType"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionStarted\u003A\u003AgetTimestamp\u0028\u0029",
+            "name": "getTimestamp",
+            "summary": "Gets\u0020the\u0020timestamp\u0020of\u0020the\u0020session\u0020start.",
+            "url": "classes/App-Domain-UserManagement-Event-SessionStarted.html#method_getTimestamp"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionStarted\u003A\u003A\u0024user",
+            "name": "user",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Event-SessionStarted.html#property_user"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionStarted\u003A\u003A\u0024session",
+            "name": "session",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Event-SessionStarted.html#property_session"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Event\\SessionStarted\u003A\u003A\u0024timestamp",
+            "name": "timestamp",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Event-SessionStarted.html#property_timestamp"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\SessionEndedHandler",
+            "name": "SessionEndedHandler",
+            "summary": "Handles\u0020the\u0020SessionEnded\u0020event.",
+            "url": "classes/App-Domain-UserManagement-EventHandler-SessionEndedHandler.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\SessionEndedHandler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "SessionEndedHandler\u0020constructor.",
+            "url": "classes/App-Domain-UserManagement-EventHandler-SessionEndedHandler.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\SessionEndedHandler\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "Handles\u0020the\u0020SessionEnded\u0020event\u0020by\u0020logging\u0020it\u0020to\u0020the\u0020audit\u0020trail.",
+            "url": "classes/App-Domain-UserManagement-EventHandler-SessionEndedHandler.html#method___invoke"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\SessionEndedHandler\u003A\u003A\u0024auditService",
+            "name": "auditService",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-EventHandler-SessionEndedHandler.html#property_auditService"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\SessionEndedHandler\u003A\u003A\u0024sessionManagementService",
+            "name": "sessionManagementService",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-EventHandler-SessionEndedHandler.html#property_sessionManagementService"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\SessionLimitExceededHandler",
+            "name": "SessionLimitExceededHandler",
+            "summary": "Handles\u0020the\u0020SessionLimitExceeded\u0020event\u0020by\u0020notifying\u0020administrators\u0020or\u0020users.",
+            "url": "classes/App-Domain-UserManagement-EventHandler-SessionLimitExceededHandler.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\SessionLimitExceededHandler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/App-Domain-UserManagement-EventHandler-SessionLimitExceededHandler.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\SessionLimitExceededHandler\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "Invokes\u0020the\u0020handler\u0020to\u0020notify\u0020users\/admins\u0020of\u0020a\u0020session\u0020limit\u0020exceedance.",
+            "url": "classes/App-Domain-UserManagement-EventHandler-SessionLimitExceededHandler.html#method___invoke"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\SessionLimitExceededHandler\u003A\u003A\u0024notificationService",
+            "name": "notificationService",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-EventHandler-SessionLimitExceededHandler.html#property_notificationService"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\SessionStartedHandler",
+            "name": "SessionStartedHandler",
+            "summary": "Handles\u0020actions\u0020to\u0020be\u0020taken\u0020when\u0020a\u0020SessionStarted\u0020event\u0020is\u0020dispatched.",
+            "url": "classes/App-Domain-UserManagement-EventHandler-SessionStartedHandler.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\SessionStartedHandler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructs\u0020a\u0020new\u0020instance\u0020of\u0020SessionStartedHandler.",
+            "url": "classes/App-Domain-UserManagement-EventHandler-SessionStartedHandler.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\SessionStartedHandler\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "Handles\u0020the\u0020SessionStarted\u0020event\u0020by\u0020tracking\u0020session\u0020activity\u0020and\u0020controlling\u0020active\u0020sessions.",
+            "url": "classes/App-Domain-UserManagement-EventHandler-SessionStartedHandler.html#method___invoke"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\SessionStartedHandler\u003A\u003A\u0024sessionMonitor",
+            "name": "sessionMonitor",
+            "summary": "Service\u0020for\u0020monitoring\u0020and\u0020managing\u0020user\u0020sessions.",
+            "url": "classes/App-Domain-UserManagement-EventHandler-SessionStartedHandler.html#property_sessionMonitor"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\EventHandler\\SessionStartedHandler\u003A\u003A\u0024auditService",
+            "name": "auditService",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-EventHandler-SessionStartedHandler.html#property_auditService"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\SessionManagementService",
+            "name": "SessionManagementService",
+            "summary": "Service\u0020responsible\u0020for\u0020managing\u0020session\u002Drelated\u0020operations,\nsuch\u0020as\u0020ending\u0020a\u0020session\u0020and\u0020updating\u0020active\u0020session\u0020counts.",
+            "url": "classes/App-Domain-UserManagement-Service-SessionManagementService.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\SessionManagementService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Service-SessionManagementService.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\SessionManagementService\u003A\u003AendSessionAndUpdateCount\u0028\u0029",
+            "name": "endSessionAndUpdateCount",
+            "summary": "Ends\u0020a\u0020session\u0020and\u0020updates\u0020the\u0020user\u0027s\u0020active\u0020session\u0020count.",
+            "url": "classes/App-Domain-UserManagement-Service-SessionManagementService.html#method_endSessionAndUpdateCount"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\SessionManagementService\u003A\u003A\u0024sessionRepository",
+            "name": "sessionRepository",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Service-SessionManagementService.html#property_sessionRepository"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\SessionManagementService\u003A\u003A\u0024userRepository",
+            "name": "userRepository",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-Service-SessionManagementService.html#property_userRepository"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\SessionMonitorService",
+            "name": "SessionMonitorService",
+            "summary": "Service\u0020for\u0020monitoring\u0020and\u0020managing\u0020user\u0020sessions.",
+            "url": "classes/App-Domain-UserManagement-Service-SessionMonitorService.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\SessionMonitorService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/App-Domain-UserManagement-Service-SessionMonitorService.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\SessionMonitorService\u003A\u003AtrackSession\u0028\u0029",
+            "name": "trackSession",
+            "summary": "Tracks\u0020a\u0020new\u0020session\u0020for\u0020a\u0020user,\u0020checking\u0020device\u0020and\u0020session\u0020limit\u0020conditions.",
+            "url": "classes/App-Domain-UserManagement-Service-SessionMonitorService.html#method_trackSession"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\SessionMonitorService\u003A\u003AisKnownDevice\u0028\u0029",
+            "name": "isKnownDevice",
+            "summary": "Checks\u0020if\u0020the\u0020user\u0020has\u0020previously\u0020logged\u0020in\u0020with\u0020the\u0020specified\u0020device\u0020type.",
+            "url": "classes/App-Domain-UserManagement-Service-SessionMonitorService.html#method_isKnownDevice"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\SessionMonitorService\u003A\u003A\u0024userRepository",
+            "name": "userRepository",
+            "summary": "Repository\u0020for\u0020retrieving\u0020user\u002Drelated\u0020data.",
+            "url": "classes/App-Domain-UserManagement-Service-SessionMonitorService.html#property_userRepository"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Service\\SessionMonitorService\u003A\u003A\u0024sessionLimit",
+            "name": "sessionLimit",
+            "summary": "Maximum\u0020allowed\u0020sessions\u0020per\u0020user.",
+            "url": "classes/App-Domain-UserManagement-Service-SessionMonitorService.html#property_sessionLimit"
+        },                {
             "fqsen": "\\App\\Domain\\UserManagement\\Service\\SessionService",
             "name": "SessionService",
-            "summary": "Service\u0020for\u0020managing\u0020user\u0020sessions\u0020within\u0020the\u0020system.",
+            "summary": "Service\u0020to\u0020manage\u0020user\u0020sessions\u0020and\u0020device\u0020verification\u0020for\u0020security.",
             "url": "classes/App-Domain-UserManagement-Service-SessionService.html"
         },                {
             "fqsen": "\\App\\Domain\\UserManagement\\Service\\SessionService\u003A\u003AcreateSession\u0028\u0029",
             "name": "createSession",
-            "summary": "Creates\u0020a\u0020new\u0020session\u0020for\u0020the\u0020given\u0020user\u0020and\u0020associates\u0020it\u0020with\u0020a\u0020device.",
+            "summary": "Starts\u0020a\u0020new\u0020session\u0020for\u0020the\u0020user,\u0020checking\u0020device\u0020and\u0020emitting\u0020login\u0020events.",
             "url": "classes/App-Domain-UserManagement-Service-SessionService.html#method_createSession"
         },                {
             "fqsen": "\\App\\Domain\\UserManagement\\Service\\SessionService\u003A\u003AisNewDevice\u0028\u0029",
             "name": "isNewDevice",
-            "summary": "Checks\u0020if\u0020a\u0020device\u0020is\u0020new\u0020for\u0020the\u0020specified\u0020user.",
+            "summary": "Determines\u0020if\u0020the\u0020device\u0020is\u0020new\u0020for\u0020the\u0020user.",
             "url": "classes/App-Domain-UserManagement-Service-SessionService.html#method_isNewDevice"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Service\\SessionService\u003A\u003AcloseAllSessions\u0028\u0029",
-            "name": "closeAllSessions",
-            "summary": "Closes\u0020all\u0020active\u0020sessions\u0020for\u0020the\u0020given\u0020user.",
-            "url": "classes/App-Domain-UserManagement-Service-SessionService.html#method_closeAllSessions"
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Adapter\\AuditAdapter",
+            "name": "AuditAdapter",
+            "summary": "AuditAdapter",
+            "url": "classes/App-Domain-UserManagement-User-Adapter-AuditAdapter.html"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Service\\UserService",
-            "name": "UserService",
-            "summary": "UserService",
-            "url": "classes/App-Domain-UserManagement-Service-UserService.html"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Service\\UserService\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Adapter\\AuditAdapter\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "UserService\u0020constructor.",
-            "url": "classes/App-Domain-UserManagement-Service-UserService.html#method___construct"
+            "summary": "Constructs\u0020a\u0020new\u0020instance\u0020of\u0020the\u0020AuditAdapter.",
+            "url": "classes/App-Domain-UserManagement-User-Adapter-AuditAdapter.html#method___construct"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Service\\UserService\u003A\u003AregisterUser\u0028\u0029",
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Adapter\\AuditAdapter\u003A\u003AlogAudit\u0028\u0029",
+            "name": "logAudit",
+            "summary": "Logs\u0020an\u0020audit\u0020entry\u0020for\u0020a\u0020significant\u0020action\u0020on\u0020an\u0020entity,\u0020allowing\nfor\u0020lifecycle\u0020events\u0020or\u0020detailed\u0020property\u0020changes.",
+            "url": "classes/App-Domain-UserManagement-User-Adapter-AuditAdapter.html#method_logAudit"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Adapter\\AuditAdapter\u003A\u003A\u0024auditService",
+            "name": "auditService",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Adapter-AuditAdapter.html#property_auditService"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\Device",
+            "name": "Device",
+            "summary": "Device",
+            "url": "classes/App-Domain-UserManagement-User-Entity-Device.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\Device\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Initializes\u0020a\u0020new\u0020Device\u0020instance.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-Device.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\Device\u003A\u003AgetDeviceIdentifier\u0028\u0029",
+            "name": "getDeviceIdentifier",
+            "summary": "Gets\u0020the\u0020device\u0027s\u0020unique\u0020identifier.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-Device.html#method_getDeviceIdentifier"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\Device\u003A\u003AgetDeviceType\u0028\u0029",
+            "name": "getDeviceType",
+            "summary": "Gets\u0020the\u0020type\u0020of\u0020device.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-Device.html#method_getDeviceType"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\Device\u003A\u003AgetFingerprint\u0028\u0029",
+            "name": "getFingerprint",
+            "summary": "Gets\u0020the\u0020optional\u0020fingerprint\u0020data\u0020for\u0020the\u0020device.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-Device.html#method_getFingerprint"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\Device\u003A\u003Aequals\u0028\u0029",
+            "name": "equals",
+            "summary": "Checks\u0020if\u0020this\u0020device\u0020is\u0020equal\u0020to\u0020another\u0020device.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-Device.html#method_equals"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\Device\u003A\u003A\u0024deviceIdentifier",
+            "name": "deviceIdentifier",
+            "summary": "Unique\u0020identifier\u0020for\u0020the\u0020device,\u0020such\u0020as\u0020a\u0020UUID\u0020or\u0020persistent\u0020token.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-Device.html#property_deviceIdentifier"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\Device\u003A\u003A\u0024deviceType",
+            "name": "deviceType",
+            "summary": "Type\u0020of\u0020device\u0020\u0028e.g.,\u0020\u0022mobile\u0022,\u0020\u0022desktop\u0022,\u0020\u0022tablet\u0022\u0029.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-Device.html#property_deviceType"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\Device\u003A\u003A\u0024fingerprint",
+            "name": "fingerprint",
+            "summary": "Optional\u0020browser\u0020fingerprint\u0020or\u0020other\u0020identifying\u0020data.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-Device.html#property_fingerprint"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User",
+            "name": "User",
+            "summary": "User",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Initializes\u0020a\u0020new\u0020instance\u0020with\u0020a\u0020unique\u0020identifier.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AaddSession\u0028\u0029",
+            "name": "addSession",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_addSession"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AremoveSession\u0028\u0029",
+            "name": "removeSession",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_removeSession"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AcloseAllSessions\u0028\u0029",
+            "name": "closeAllSessions",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_closeAllSessions"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AgetSessions\u0028\u0029",
+            "name": "getSessions",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_getSessions"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AgetUsername\u0028\u0029",
+            "name": "getUsername",
+            "summary": "Gets\u0020the\u0020username.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_getUsername"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AsetUsername\u0028\u0029",
+            "name": "setUsername",
+            "summary": "Sets\u0020the\u0020username.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_setUsername"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AgetEmail\u0028\u0029",
+            "name": "getEmail",
+            "summary": "Gets\u0020the\u0020email\u0020address.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_getEmail"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AsetEmail\u0028\u0029",
+            "name": "setEmail",
+            "summary": "Sets\u0020the\u0020email\u0020address.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_setEmail"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AgetPasswordHash\u0028\u0029",
+            "name": "getPasswordHash",
+            "summary": "Gets\u0020the\u0020hashed\u0020password.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_getPasswordHash"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AsetPasswordHash\u0028\u0029",
+            "name": "setPasswordHash",
+            "summary": "Sets\u0020the\u0020password\u0020hash.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_setPasswordHash"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AgetRole\u0028\u0029",
+            "name": "getRole",
+            "summary": "Gets\u0020the\u0020role.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_getRole"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AsetRole\u0028\u0029",
+            "name": "setRole",
+            "summary": "Sets\u0020the\u0020role.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_setRole"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003A\u0024isActive",
+            "name": "isActive",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#property_isActive"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AsetActive\u0028\u0029",
+            "name": "setActive",
+            "summary": "Sets\u0020the\u0020active\u0020status\u0020of\u0020the\u0020user.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_setActive"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AgetLastLogin\u0028\u0029",
+            "name": "getLastLogin",
+            "summary": "Gets\u0020the\u0020last\u0020login\u0020time.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_getLastLogin"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AsetLastLogin\u0028\u0029",
+            "name": "setLastLogin",
+            "summary": "Sets\u0020the\u0020last\u0020login\u0020time.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_setLastLogin"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003Aregister\u0028\u0029",
+            "name": "register",
+            "summary": "Register\u0020a\u0020new\u0020user\u0020and\u0020raise\u0020the\u0020UserRegistered\u0020event.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_register"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AupdatePermissionsBasedOnRole\u0028\u0029",
+            "name": "updatePermissionsBasedOnRole",
+            "summary": "Updates\u0020the\u0020user\u0027s\u0020permissions\u0020based\u0020on\u0020their\u0020role.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_updatePermissionsBasedOnRole"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AgetPermissions\u0028\u0029",
+            "name": "getPermissions",
+            "summary": "Returns\u0020the\u0020user\u0027s\u0020current\u0020permissions.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_getPermissions"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AchangePassword\u0028\u0029",
+            "name": "changePassword",
+            "summary": "Changes\u0020the\u0020user\u0027s\u0020password\u0020and\u0020raises\u0020the\u0020PasswordChanged\u0020event.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_changePassword"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AupdateActiveSessionsCount\u0028\u0029",
+            "name": "updateActiveSessionsCount",
+            "summary": "Updates\u0020the\u0020active\u0020sessions\u0020count\u0020by\u0020counting\u0020only\u0020non\u002Dexpired\u0020sessions.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_updateActiveSessionsCount"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003AgetActiveSessionsCount\u0028\u0029",
+            "name": "getActiveSessionsCount",
+            "summary": "Gets\u0020the\u0020active\u0020sessions\u0020count\u0020for\u0020the\u0020user.",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#method_getActiveSessionsCount"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003A\u0024username",
+            "name": "username",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#property_username"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003A\u0024activeSessionsCount",
+            "name": "activeSessionsCount",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#property_activeSessionsCount"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003A\u0024email",
+            "name": "email",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#property_email"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003A\u0024passwordHash",
+            "name": "passwordHash",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#property_passwordHash"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003A\u0024role",
+            "name": "role",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#property_role"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003A\u0024permissions",
+            "name": "permissions",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#property_permissions"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003A\u0024lastLogin",
+            "name": "lastLogin",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#property_lastLogin"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity\\User\u003A\u003A\u0024sessions",
+            "name": "sessions",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Entity-User.html#property_sessions"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Event\\UserRegistered",
+            "name": "UserRegistered",
+            "summary": "UserRegistered",
+            "url": "classes/App-Domain-UserManagement-User-Event-UserRegistered.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Event\\UserRegistered\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Initializes\u0020a\u0020new\u0020UserRegistered\u0020event\u0020instance.",
+            "url": "classes/App-Domain-UserManagement-User-Event-UserRegistered.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Event\\UserRegistered\u003A\u003AgetUserId\u0028\u0029",
+            "name": "getUserId",
+            "summary": "Gets\u0020the\u0020unique\u0020identifier\u0020of\u0020the\u0020registered\u0020user.",
+            "url": "classes/App-Domain-UserManagement-User-Event-UserRegistered.html#method_getUserId"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Event\\UserRegistered\u003A\u003AgetUsername\u0028\u0029",
+            "name": "getUsername",
+            "summary": "Gets\u0020the\u0020username\u0020of\u0020the\u0020registered\u0020user.",
+            "url": "classes/App-Domain-UserManagement-User-Event-UserRegistered.html#method_getUsername"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Event\\UserRegistered\u003A\u003AgetEmail\u0028\u0029",
+            "name": "getEmail",
+            "summary": "Gets\u0020the\u0020email\u0020address\u0020of\u0020the\u0020registered\u0020user.",
+            "url": "classes/App-Domain-UserManagement-User-Event-UserRegistered.html#method_getEmail"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Event\\UserRegistered\u003A\u003A\u0024userId",
+            "name": "userId",
+            "summary": "The\u0020unique\u0020identifier\u0020of\u0020the\u0020registered\u0020user.",
+            "url": "classes/App-Domain-UserManagement-User-Event-UserRegistered.html#property_userId"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Event\\UserRegistered\u003A\u003A\u0024username",
+            "name": "username",
+            "summary": "The\u0020username\u0020of\u0020the\u0020registered\u0020user.",
+            "url": "classes/App-Domain-UserManagement-User-Event-UserRegistered.html#property_username"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Event\\UserRegistered\u003A\u003A\u0024email",
+            "name": "email",
+            "summary": "The\u0020email\u0020address\u0020of\u0020the\u0020registered\u0020user.",
+            "url": "classes/App-Domain-UserManagement-User-Event-UserRegistered.html#property_email"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Handler\\UserRegisteredHandler",
+            "name": "UserRegisteredHandler",
+            "summary": "UserRegisteredHandler",
+            "url": "classes/App-Domain-UserManagement-User-Handler-UserRegisteredHandler.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Handler\\UserRegisteredHandler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructs\u0020a\u0020new\u0020UserRegisteredHandler\u0020instance.",
+            "url": "classes/App-Domain-UserManagement-User-Handler-UserRegisteredHandler.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Handler\\UserRegisteredHandler\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "Handles\u0020the\u0020UserRegistered\u0020event\u0020by\u0020performing\u0020audit\u0020logging\u0020and\u0020sending\u0020a\u0020welcome\u0020email.",
+            "url": "classes/App-Domain-UserManagement-User-Handler-UserRegisteredHandler.html#method___invoke"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Handler\\UserRegisteredHandler\u003A\u003A\u0024auditAdapter",
+            "name": "auditAdapter",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Handler-UserRegisteredHandler.html#property_auditAdapter"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Handler\\UserRegisteredHandler\u003A\u003A\u0024emailService",
+            "name": "emailService",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Handler-UserRegisteredHandler.html#property_emailService"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Notification\\NotificationAdapterInterface",
+            "name": "NotificationAdapterInterface",
+            "summary": "NotificationAdapterInterface",
+            "url": "classes/App-Domain-UserManagement-Notification-NotificationAdapterInterface.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Notification\\NotificationAdapterInterface\u003A\u003AsendAlert\u0028\u0029",
+            "name": "sendAlert",
+            "summary": "Sends\u0020an\u0020alert\u0020notification.",
+            "url": "classes/App-Domain-UserManagement-Notification-NotificationAdapterInterface.html#method_sendAlert"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Notification\\NotificationAdapterInterface\u003A\u003AsendEmail\u0028\u0029",
+            "name": "sendEmail",
+            "summary": "Sends\u0020an\u0020email\u0020notification.",
+            "url": "classes/App-Domain-UserManagement-Notification-NotificationAdapterInterface.html#method_sendEmail"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\DataProvider\\UserDataProviderInterface",
+            "name": "UserDataProviderInterface",
+            "summary": "UserDataProviderInterface",
+            "url": "classes/App-Domain-UserManagement-User-DataProvider-UserDataProviderInterface.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\DataProvider\\UserDataProviderInterface\u003A\u003AfindById\u0028\u0029",
+            "name": "findById",
+            "summary": "Finds\u0020a\u0020user\u0020by\u0020their\u0020unique\u0020ID.",
+            "url": "classes/App-Domain-UserManagement-User-DataProvider-UserDataProviderInterface.html#method_findById"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\DataProvider\\UserDataProviderInterface\u003A\u003AfindByEmail\u0028\u0029",
+            "name": "findByEmail",
+            "summary": "Finds\u0020a\u0020user\u0020by\u0020their\u0020email\u0020address.",
+            "url": "classes/App-Domain-UserManagement-User-DataProvider-UserDataProviderInterface.html#method_findByEmail"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Repository\\UserRepositoryInterface",
+            "name": "UserRepositoryInterface",
+            "summary": "UserRepositoryInterface",
+            "url": "classes/App-Domain-UserManagement-User-Repository-UserRepositoryInterface.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Repository\\UserRepositoryInterface\u003A\u003AfindByEmail\u0028\u0029",
+            "name": "findByEmail",
+            "summary": "Finds\u0020a\u0020user\u0020by\u0020their\u0020email\u0020address.",
+            "url": "classes/App-Domain-UserManagement-User-Repository-UserRepositoryInterface.html#method_findByEmail"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Service\\EmailService",
+            "name": "EmailService",
+            "summary": "EmailService",
+            "url": "classes/App-Domain-UserManagement-User-Service-EmailService.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Service\\EmailService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructs\u0020the\u0020EmailService\u0020with\u0020the\u0020specified\u0020MailerService.",
+            "url": "classes/App-Domain-UserManagement-User-Service-EmailService.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Service\\EmailService\u003A\u003AsendWelcomeEmail\u0028\u0029",
+            "name": "sendWelcomeEmail",
+            "summary": "Sends\u0020a\u0020welcome\u0020email\u0020to\u0020a\u0020newly\u0020registered\u0020user.",
+            "url": "classes/App-Domain-UserManagement-User-Service-EmailService.html#method_sendWelcomeEmail"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Service\\EmailService\u003A\u003AsendPasswordResetEmail\u0028\u0029",
+            "name": "sendPasswordResetEmail",
+            "summary": "Sends\u0020a\u0020password\u0020reset\u0020email\u0020to\u0020a\u0020user.",
+            "url": "classes/App-Domain-UserManagement-User-Service-EmailService.html#method_sendPasswordResetEmail"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Service\\EmailService\u003A\u003A\u0024mailerService",
+            "name": "mailerService",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Service-EmailService.html#property_mailerService"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Service\\UserManagerInterface",
+            "name": "UserManagerInterface",
+            "summary": "UserManagerInterface",
+            "url": "classes/App-Domain-UserManagement-Auth-Service-UserManagerInterface.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Service\\UserManagerInterface\u003A\u003AupdateLastLogin\u0028\u0029",
+            "name": "updateLastLogin",
+            "summary": "Updates\u0020the\u0020user\u0027s\u0020last\u0020login\u0020timestamp.",
+            "url": "classes/App-Domain-UserManagement-Auth-Service-UserManagerInterface.html#method_updateLastLogin"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Service\\UserRegistrationService",
+            "name": "UserRegistrationService",
+            "summary": "UserRegistrationService",
+            "url": "classes/App-Domain-UserManagement-User-Service-UserRegistrationService.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Service\\UserRegistrationService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructs\u0020a\u0020new\u0020instance\u0020of\u0020UserRegistrationService.",
+            "url": "classes/App-Domain-UserManagement-User-Service-UserRegistrationService.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Service\\UserRegistrationService\u003A\u003AregisterUser\u0028\u0029",
             "name": "registerUser",
-            "summary": "Registers\u0020a\u0020new\u0020user\u0020and\u0020dispatches\u0020UserRegistered\u0020event.",
-            "url": "classes/App-Domain-UserManagement-Service-UserService.html#method_registerUser"
+            "summary": "Registers\u0020a\u0020new\u0020user\u0020and\u0020dispatches\u0020the\u0020UserRegistered\u0020event.",
+            "url": "classes/App-Domain-UserManagement-User-Service-UserRegistrationService.html#method_registerUser"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Service\\UserService\u003A\u003A\u0024userRepository",
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Service\\UserRegistrationService\u003A\u003A\u0024userRepository",
             "name": "userRepository",
             "summary": "",
-            "url": "classes/App-Domain-UserManagement-Service-UserService.html#property_userRepository"
+            "url": "classes/App-Domain-UserManagement-User-Service-UserRegistrationService.html#property_userRepository"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Service\\UserService\u003A\u003A\u0024eventDispatcher",
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Service\\UserRegistrationService\u003A\u003A\u0024eventDispatcher",
             "name": "eventDispatcher",
             "summary": "",
-            "url": "classes/App-Domain-UserManagement-Service-UserService.html#property_eventDispatcher"
+            "url": "classes/App-Domain-UserManagement-User-Service-UserRegistrationService.html#property_eventDispatcher"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Service\\UserService",
+            "name": "UserService",
+            "summary": "UserService",
+            "url": "classes/App-Domain-UserManagement-User-Service-UserService.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Service\\UserService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructs\u0020a\u0020new\u0020instance\u0020of\u0020UserService.",
+            "url": "classes/App-Domain-UserManagement-User-Service-UserService.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Service\\UserService\u003A\u003AupdateLastLogin\u0028\u0029",
+            "name": "updateLastLogin",
+            "summary": "Updates\u0020the\u0020\u0060lastLogin\u0060\u0020timestamp\u0020for\u0020a\u0020user.",
+            "url": "classes/App-Domain-UserManagement-User-Service-UserService.html#method_updateLastLogin"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Service\\UserService\u003A\u003AfindUserById\u0028\u0029",
+            "name": "findUserById",
+            "summary": "Finds\u0020a\u0020user\u0020by\u0020their\u0020unique\u0020identifier.",
+            "url": "classes/App-Domain-UserManagement-User-Service-UserService.html#method_findUserById"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Service\\UserService\u003A\u003A\u0024userRepository",
+            "name": "userRepository",
+            "summary": "",
+            "url": "classes/App-Domain-UserManagement-User-Service-UserService.html#property_userRepository"
         },                {
             "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Password",
             "name": "Password",
-            "summary": "Value\u0020Object\u0020to\u0020handle\u0020password\u0020hashing\u0020and\u0020validation.",
+            "summary": "Password",
             "url": "classes/App-Domain-UserManagement-ValueObject-Password.html"
         },                {
             "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Password\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Initializes\u0020the\u0020Password\u0020object\u0020and\u0020hashes\u0020the\u0020password.",
+            "summary": "Initializes\u0020the\u0020Password\u0020object\u0020by\u0020validating\u0020and\u0020hashing\u0020the\u0020password.",
             "url": "classes/App-Domain-UserManagement-ValueObject-Password.html#method___construct"
         },                {
             "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Password\u003A\u003AassertPasswordStrength\u0028\u0029",
             "name": "assertPasswordStrength",
-            "summary": "Validates\u0020the\u0020password\u0020strength.",
+            "summary": "Ensures\u0020the\u0020password\u0020meets\u0020strength\u0020requirements.",
             "url": "classes/App-Domain-UserManagement-ValueObject-Password.html#method_assertPasswordStrength"
         },                {
             "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Password\u003A\u003AhashPassword\u0028\u0029",
             "name": "hashPassword",
-            "summary": "Hashes\u0020a\u0020plain\u0020text\u0020password.",
+            "summary": "Hashes\u0020the\u0020provided\u0020plain\u0020text\u0020password.",
             "url": "classes/App-Domain-UserManagement-ValueObject-Password.html#method_hashPassword"
         },                {
             "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Password\u003A\u003Averify\u0028\u0029",
             "name": "verify",
-            "summary": "Verifies\u0020if\u0020a\u0020plain\u0020text\u0020password\u0020matches\u0020the\u0020hashed\u0020password.",
+            "summary": "Verifies\u0020if\u0020a\u0020plain\u0020text\u0020password\u0020matches\u0020the\u0020stored\u0020hashed\u0020password.",
             "url": "classes/App-Domain-UserManagement-ValueObject-Password.html#method_verify"
         },                {
             "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Password\u003A\u003AgetHashedPassword\u0028\u0029",
             "name": "getHashedPassword",
-            "summary": "Returns\u0020the\u0020hashed\u0020password.",
+            "summary": "Returns\u0020the\u0020hashed\u0020password\u0020for\u0020storage\u0020or\u0020comparison.",
             "url": "classes/App-Domain-UserManagement-ValueObject-Password.html#method_getHashedPassword"
         },                {
             "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Password\u003A\u003A\u0024hashedPassword",
             "name": "hashedPassword",
             "summary": "The\u0020hashed\u0020password\u0020string.",
             "url": "classes/App-Domain-UserManagement-ValueObject-Password.html#property_hashedPassword"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Role",
-            "name": "Role",
-            "summary": "Value\u0020Object\u0020to\u0020define\u0020user\u0020roles.",
-            "url": "classes/App-Domain-UserManagement-ValueObject-Role.html"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Role\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Initializes\u0020the\u0020Role\u0020object\u0020and\u0020validates\u0020it.",
-            "url": "classes/App-Domain-UserManagement-ValueObject-Role.html#method___construct"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Role\u003A\u003AgetRole\u0028\u0029",
-            "name": "getRole",
-            "summary": "Returns\u0020the\u0020role\u0020of\u0020the\u0020user.",
-            "url": "classes/App-Domain-UserManagement-ValueObject-Role.html#method_getRole"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Role\u003A\u003AisEqual\u0028\u0029",
-            "name": "isEqual",
-            "summary": "Checks\u0020if\u0020this\u0020role\u0020is\u0020equal\u0020to\u0020another\u0020role.",
-            "url": "classes/App-Domain-UserManagement-ValueObject-Role.html#method_isEqual"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Role\u003A\u003AisAdmin\u0028\u0029",
-            "name": "isAdmin",
-            "summary": "Checks\u0020if\u0020the\u0020role\u0020is\u0020\u0027ROLE_ADMIN\u0027.",
-            "url": "classes/App-Domain-UserManagement-ValueObject-Role.html#method_isAdmin"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Role\u003A\u003AisTeacher\u0028\u0029",
-            "name": "isTeacher",
-            "summary": "Checks\u0020if\u0020the\u0020role\u0020is\u0020\u0027ROLE_TEACHER\u0027.",
-            "url": "classes/App-Domain-UserManagement-ValueObject-Role.html#method_isTeacher"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Role\u003A\u003AisThirdLevelTeacher\u0028\u0029",
-            "name": "isThirdLevelTeacher",
-            "summary": "Checks\u0020if\u0020the\u0020role\u0020is\u0020\u0027ROLE_THIRD_LEVEL_TEACHER\u0027.",
-            "url": "classes/App-Domain-UserManagement-ValueObject-Role.html#method_isThirdLevelTeacher"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Role\u003A\u003AisPrincipal\u0028\u0029",
-            "name": "isPrincipal",
-            "summary": "Checks\u0020if\u0020the\u0020role\u0020is\u0020\u0027ROLE_PRINCIPAL\u0027.",
-            "url": "classes/App-Domain-UserManagement-ValueObject-Role.html#method_isPrincipal"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Role\u003A\u003AALLOWED_ROLES",
-            "name": "ALLOWED_ROLES",
-            "summary": "List\u0020of\u0020allowed\u0020roles\u0020in\u0020the\u0020system.",
-            "url": "classes/App-Domain-UserManagement-ValueObject-Role.html#constant_ALLOWED_ROLES"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\ValueObject\\Role\u003A\u003A\u0024role",
-            "name": "role",
-            "summary": "The\u0020role\u0020of\u0020the\u0020user.",
-            "url": "classes/App-Domain-UserManagement-ValueObject-Role.html#property_role"
         },                {
             "fqsen": "\\App\\Infrastructure\\Mailer\\MailerService",
             "name": "MailerService",
@@ -726,9 +1446,34 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/App-Infrastructure-Persistence-BaseEntityRepository.html#property_repository"
         },                {
+            "fqsen": "\\App\\Infrastructure\\Persistence\\SessionRepository",
+            "name": "SessionRepository",
+            "summary": "Repository\u0020for\u0020managing\u0020Session\u0020entities.",
+            "url": "classes/App-Infrastructure-Persistence-SessionRepository.html"
+        },                {
+            "fqsen": "\\App\\Infrastructure\\Persistence\\SessionRepository\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "SessionRepository\u0020constructor.",
+            "url": "classes/App-Infrastructure-Persistence-SessionRepository.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Infrastructure\\Persistence\\SessionRepository\u003A\u003AfindActiveSessionsByUserId\u0028\u0029",
+            "name": "findActiveSessionsByUserId",
+            "summary": "Finds\u0020active\u0020sessions\u0020by\u0020user\u0020ID,\u0020filtering\u0020out\u0020expired\u0020sessions.",
+            "url": "classes/App-Infrastructure-Persistence-SessionRepository.html#method_findActiveSessionsByUserId"
+        },                {
+            "fqsen": "\\App\\Infrastructure\\Persistence\\SessionRepository\u003A\u003AendAllSessionsForUser\u0028\u0029",
+            "name": "endAllSessionsForUser",
+            "summary": "Ends\u0020all\u0020sessions\u0020for\u0020a\u0020specific\u0020user,\u0020typically\u0020used\u0020when\u0020enforcing\u0020single\u002Dsession\u0020limits.",
+            "url": "classes/App-Infrastructure-Persistence-SessionRepository.html#method_endAllSessionsForUser"
+        },                {
+            "fqsen": "\\App\\Infrastructure\\Persistence\\SessionRepository\u003A\u003AcountActiveSessions\u0028\u0029",
+            "name": "countActiveSessions",
+            "summary": "Counts\u0020the\u0020active\u0020\u0028non\u002Dexpired\u0029\u0020sessions\u0020for\u0020a\u0020given\u0020user.",
+            "url": "classes/App-Infrastructure-Persistence-SessionRepository.html#method_countActiveSessions"
+        },                {
             "fqsen": "\\App\\Infrastructure\\Persistence\\UserRepository",
             "name": "UserRepository",
-            "summary": "UserRepository",
+            "summary": "Class\u0020UserRepository",
             "url": "classes/App-Infrastructure-Persistence-UserRepository.html"
         },                {
             "fqsen": "\\App\\Infrastructure\\Persistence\\UserRepository\u003A\u003A__construct\u0028\u0029",
@@ -740,16 +1485,6 @@ Search.appendIndex(
             "name": "findByEmail",
             "summary": "Finds\u0020a\u0020user\u0020by\u0020their\u0020email\u0020address.",
             "url": "classes/App-Infrastructure-Persistence-UserRepository.html#method_findByEmail"
-        },                {
-            "fqsen": "\\App\\Infrastructure\\Persistence\\UserRepository\u003A\u003AfindByRole\u0028\u0029",
-            "name": "findByRole",
-            "summary": "Finds\u0020users\u0020by\u0020role.",
-            "url": "classes/App-Infrastructure-Persistence-UserRepository.html#method_findByRole"
-        },                {
-            "fqsen": "\\App\\Infrastructure\\Persistence\\UserRepository\u003A\u003AfindRecentActiveUsers\u0028\u0029",
-            "name": "findRecentActiveUsers",
-            "summary": "Finds\u0020active\u0020users\u0020registered\u0020in\u0020the\u0020last\u002030\u0020days.",
-            "url": "classes/App-Infrastructure-Persistence-UserRepository.html#method_findRecentActiveUsers"
         },                {
             "fqsen": "\\App\\Infrastructure\\StateProcessor\\BaseStateProcessor",
             "name": "BaseStateProcessor",
@@ -806,80 +1541,110 @@ Search.appendIndex(
             "summary": "Gets\u0020the\u0020ID\u0020of\u0020the\u0020audited\u0020entity.",
             "url": "classes/App-SharedKernel-Audit-AuditTrail.html#method_getEntityId"
         },                {
-            "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003AsetEntityId\u0028\u0029",
-            "name": "setEntityId",
-            "summary": "Sets\u0020the\u0020ID\u0020of\u0020the\u0020audited\u0020entity.",
-            "url": "classes/App-SharedKernel-Audit-AuditTrail.html#method_setEntityId"
+            "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003AgetPerformedBy\u0028\u0029",
+            "name": "getPerformedBy",
+            "summary": "Gets\u0020the\u0020ID\u0020of\u0020the\u0020user\u0020who\u0020performed\u0020the\u0020action.",
+            "url": "classes/App-SharedKernel-Audit-AuditTrail.html#method_getPerformedBy"
         },                {
             "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003AgetPropertyName\u0028\u0029",
             "name": "getPropertyName",
             "summary": "Gets\u0020the\u0020name\u0020of\u0020the\u0020property\u0020that\u0020was\u0020changed.",
             "url": "classes/App-SharedKernel-Audit-AuditTrail.html#method_getPropertyName"
         },                {
-            "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003AsetPropertyName\u0028\u0029",
-            "name": "setPropertyName",
-            "summary": "Sets\u0020the\u0020name\u0020of\u0020the\u0020property\u0020that\u0020was\u0020changed.",
-            "url": "classes/App-SharedKernel-Audit-AuditTrail.html#method_setPropertyName"
-        },                {
             "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003AgetOldValue\u0028\u0029",
             "name": "getOldValue",
-            "summary": "Gets\u0020the\u0020previous\u0020value\u0020of\u0020the\u0020property\u0020as\u0020a\u0020JSON\u0020string.",
+            "summary": "Gets\u0020the\u0020previous\u0020value\u0020of\u0020the\u0020property.",
             "url": "classes/App-SharedKernel-Audit-AuditTrail.html#method_getOldValue"
-        },                {
-            "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003AsetOldValue\u0028\u0029",
-            "name": "setOldValue",
-            "summary": "Sets\u0020the\u0020previous\u0020value\u0020of\u0020the\u0020property\u0020as\u0020a\u0020JSON\u0020string.",
-            "url": "classes/App-SharedKernel-Audit-AuditTrail.html#method_setOldValue"
         },                {
             "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003AgetNewValue\u0028\u0029",
             "name": "getNewValue",
-            "summary": "Gets\u0020the\u0020new\u0020value\u0020of\u0020the\u0020property\u0020as\u0020a\u0020JSON\u0020string.",
+            "summary": "Gets\u0020the\u0020new\u0020value\u0020of\u0020the\u0020property.",
             "url": "classes/App-SharedKernel-Audit-AuditTrail.html#method_getNewValue"
-        },                {
-            "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003AsetNewValue\u0028\u0029",
-            "name": "setNewValue",
-            "summary": "Sets\u0020the\u0020new\u0020value\u0020of\u0020the\u0020property\u0020as\u0020a\u0020JSON\u0020string.",
-            "url": "classes/App-SharedKernel-Audit-AuditTrail.html#method_setNewValue"
         },                {
             "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003AgetChangedAt\u0028\u0029",
             "name": "getChangedAt",
-            "summary": "Gets\u0020the\u0020date\u0020and\u0020time\u0020when\u0020the\u0020change\u0020occurred.",
+            "summary": "Gets\u0020the\u0020timestamp\u0020when\u0020the\u0020change\u0020occurred.",
             "url": "classes/App-SharedKernel-Audit-AuditTrail.html#method_getChangedAt"
         },                {
-            "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003AsetChangedAt\u0028\u0029",
-            "name": "setChangedAt",
-            "summary": "Sets\u0020the\u0020date\u0020and\u0020time\u0020when\u0020the\u0020change\u0020occurred.",
-            "url": "classes/App-SharedKernel-Audit-AuditTrail.html#method_setChangedAt"
+            "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003AgetAction\u0028\u0029",
+            "name": "getAction",
+            "summary": "Gets\u0020the\u0020action\u0020performed.",
+            "url": "classes/App-SharedKernel-Audit-AuditTrail.html#method_getAction"
+        },                {
+            "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003AgetEntity\u0028\u0029",
+            "name": "getEntity",
+            "summary": "Gets\u0020the\u0020entity\u0020type.",
+            "url": "classes/App-SharedKernel-Audit-AuditTrail.html#method_getEntity"
         },                {
             "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003A\u0024id",
             "name": "id",
-            "summary": "",
+            "summary": "The\u0020unique\u0020identifier\u0020for\u0020the\u0020audit\u0020trail\u0020entry.",
             "url": "classes/App-SharedKernel-Audit-AuditTrail.html#property_id"
         },                {
             "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003A\u0024entityId",
             "name": "entityId",
-            "summary": "",
+            "summary": "The\u0020ID\u0020of\u0020the\u0020audited\u0020entity.",
             "url": "classes/App-SharedKernel-Audit-AuditTrail.html#property_entityId"
+        },                {
+            "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003A\u0024performedBy",
+            "name": "performedBy",
+            "summary": "The\u0020ID\u0020of\u0020the\u0020user\u0020who\u0020performed\u0020the\u0020action.",
+            "url": "classes/App-SharedKernel-Audit-AuditTrail.html#property_performedBy"
         },                {
             "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003A\u0024propertyName",
             "name": "propertyName",
-            "summary": "",
+            "summary": "The\u0020name\u0020of\u0020the\u0020property\u0020that\u0020was\u0020changed.",
             "url": "classes/App-SharedKernel-Audit-AuditTrail.html#property_propertyName"
+        },                {
+            "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003A\u0024action",
+            "name": "action",
+            "summary": "The\u0020action\u0020taken,\u0020such\u0020as\u0020\u0022updated\u0022\u0020or\u0020\u0022deleted\u0022.",
+            "url": "classes/App-SharedKernel-Audit-AuditTrail.html#property_action"
+        },                {
+            "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003A\u0024entity",
+            "name": "entity",
+            "summary": "The\u0020entity\u0020being\u0020audited.",
+            "url": "classes/App-SharedKernel-Audit-AuditTrail.html#property_entity"
         },                {
             "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003A\u0024oldValue",
             "name": "oldValue",
-            "summary": "",
+            "summary": "The\u0020previous\u0020value\u0020of\u0020the\u0020property\u0020as\u0020JSON.",
             "url": "classes/App-SharedKernel-Audit-AuditTrail.html#property_oldValue"
         },                {
             "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003A\u0024newValue",
             "name": "newValue",
-            "summary": "",
+            "summary": "The\u0020new\u0020value\u0020of\u0020the\u0020property\u0020as\u0020JSON.",
             "url": "classes/App-SharedKernel-Audit-AuditTrail.html#property_newValue"
         },                {
             "fqsen": "\\App\\SharedKernel\\Audit\\AuditTrail\u003A\u003A\u0024changedAt",
             "name": "changedAt",
-            "summary": "",
+            "summary": "The\u0020timestamp\u0020when\u0020the\u0020change\u0020occurred.",
             "url": "classes/App-SharedKernel-Audit-AuditTrail.html#property_changedAt"
+        },                {
+            "fqsen": "\\App\\SharedKernel\\Audit\\AuditService",
+            "name": "AuditService",
+            "summary": "Service\u0020responsible\u0020for\u0020recording\u0020audit\u0020logs\u0020of\u0020significant\u0020events\u0020in\u0020the\u0020system.",
+            "url": "classes/App-SharedKernel-Audit-AuditService.html"
+        },                {
+            "fqsen": "\\App\\SharedKernel\\Audit\\AuditService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "AuditService\u0020constructor.",
+            "url": "classes/App-SharedKernel-Audit-AuditService.html#method___construct"
+        },                {
+            "fqsen": "\\App\\SharedKernel\\Audit\\AuditService\u003A\u003AlogChange\u0028\u0029",
+            "name": "logChange",
+            "summary": "Logs\u0020an\u0020action\u0020taken\u0020on\u0020an\u0020entity,\u0020recording\u0020details\u0020in\u0020the\u0020audit\u0020trail.",
+            "url": "classes/App-SharedKernel-Audit-AuditService.html#method_logChange"
+        },                {
+            "fqsen": "\\App\\SharedKernel\\Audit\\AuditService\u003A\u003AlogLifecycleEvent\u0028\u0029",
+            "name": "logLifecycleEvent",
+            "summary": "Logs\u0020a\u0020lifecycle\u0020event,\u0020such\u0020as\u0020session\u0020start\u0020or\u0020end,\u0020without\u0020specific\u0020property\u0020changes.",
+            "url": "classes/App-SharedKernel-Audit-AuditService.html#method_logLifecycleEvent"
+        },                {
+            "fqsen": "\\App\\SharedKernel\\Audit\\AuditService\u003A\u003A\u0024entityManager",
+            "name": "entityManager",
+            "summary": "",
+            "url": "classes/App-SharedKernel-Audit-AuditService.html#property_entityManager"
         },                {
             "fqsen": "\\App\\SharedKernel\\Interface\\EventRaiserInterface",
             "name": "EventRaiserInterface",
@@ -1076,30 +1841,75 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/app-domain-common-repository.html"
         },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Entity",
-            "name": "Entity",
+            "fqsen": "\\App\\Infrastructure\\Adapter",
+            "name": "Adapter",
             "summary": "",
-            "url": "namespaces/app-domain-usermanagement-entity.html"
+            "url": "namespaces/app-infrastructure-adapter.html"
+        },                {
+            "fqsen": "\\App\\Infrastructure",
+            "name": "Infrastructure",
+            "summary": "",
+            "url": "namespaces/app-infrastructure.html"
+        },                {
+            "fqsen": "\\App\\Infrastructure\\Auth\\Repository",
+            "name": "Repository",
+            "summary": "",
+            "url": "namespaces/app-infrastructure-auth-repository.html"
+        },                {
+            "fqsen": "\\App\\Infrastructure\\Auth",
+            "name": "Auth",
+            "summary": "",
+            "url": "namespaces/app-infrastructure-auth.html"
+        },                {
+            "fqsen": "\\App\\Infrastructure\\Auth\\Service",
+            "name": "Service",
+            "summary": "",
+            "url": "namespaces/app-infrastructure-auth-service.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Event",
+            "name": "Event",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-auth-event.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth",
+            "name": "Auth",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-auth.html"
         },                {
             "fqsen": "\\App\\Domain\\UserManagement",
             "name": "UserManagement",
             "summary": "",
             "url": "namespaces/app-domain-usermanagement.html"
         },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Handler",
+            "name": "Handler",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-auth-handler.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Service\\Interface",
+            "name": "Interface",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-auth-service-interface.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Repository",
+            "name": "Repository",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-auth-repository.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\Service",
+            "name": "Service",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-auth-service.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Auth\\ValueObject",
+            "name": "ValueObject",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-auth-valueobject.html"
+        },                {
             "fqsen": "\\App\\Domain\\UserManagement\\Event",
             "name": "Event",
             "summary": "",
             "url": "namespaces/app-domain-usermanagement-event.html"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Handler\\Event",
-            "name": "Event",
-            "summary": "",
-            "url": "namespaces/app-domain-usermanagement-handler-event.html"
-        },                {
-            "fqsen": "\\App\\Domain\\UserManagement\\Handler",
-            "name": "Handler",
-            "summary": "",
-            "url": "namespaces/app-domain-usermanagement-handler.html"
         },                {
             "fqsen": "\\App\\Domain\\UserManagement\\EventHandler",
             "name": "EventHandler",
@@ -1111,6 +1921,56 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/app-domain-usermanagement-service.html"
         },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Entity",
+            "name": "Entity",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-entity.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Adapter",
+            "name": "Adapter",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-user-adapter.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User",
+            "name": "User",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-user.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Entity",
+            "name": "Entity",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-user-entity.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Event",
+            "name": "Event",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-user-event.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Handler",
+            "name": "Handler",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-user-handler.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\Notification",
+            "name": "Notification",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-notification.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\DataProvider",
+            "name": "DataProvider",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-user-dataprovider.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Repository",
+            "name": "Repository",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-user-repository.html"
+        },                {
+            "fqsen": "\\App\\Domain\\UserManagement\\User\\Service",
+            "name": "Service",
+            "summary": "",
+            "url": "namespaces/app-domain-usermanagement-user-service.html"
+        },                {
             "fqsen": "\\App\\Domain\\UserManagement\\ValueObject",
             "name": "ValueObject",
             "summary": "",
@@ -1120,11 +1980,6 @@ Search.appendIndex(
             "name": "Mailer",
             "summary": "",
             "url": "namespaces/app-infrastructure-mailer.html"
-        },                {
-            "fqsen": "\\App\\Infrastructure",
-            "name": "Infrastructure",
-            "summary": "",
-            "url": "namespaces/app-infrastructure.html"
         },                {
             "fqsen": "\\App\\Infrastructure\\Persistence",
             "name": "Persistence",

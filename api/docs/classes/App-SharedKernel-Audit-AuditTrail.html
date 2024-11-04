@@ -137,7 +137,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -217,40 +217,67 @@ its previous value, and the new value.</p>
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#property_action">$action</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>The action taken, such as &quot;updated&quot; or &quot;deleted&quot;.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#property_changedAt">$changedAt</a>
     <span>
                         &nbsp;: <abbr title="\DateTime">DateTime</abbr>            </span>
 </dt>
+<dd>The timestamp when the change occurred.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#property_entity">$entity</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>The entity being audited.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#property_entityId">$entityId</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: <abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr>            </span>
 </dt>
+<dd>The ID of the audited entity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#property_id">$id</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
+<dd>The unique identifier for the audit trail entry.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#property_newValue">$newValue</a>
     <span>
                         &nbsp;: string|null            </span>
 </dt>
+<dd>The new value of the property as JSON.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#property_oldValue">$oldValue</a>
     <span>
                         &nbsp;: string|null            </span>
 </dt>
+<dd>The previous value of the property as JSON.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#property_performedBy">$performedBy</a>
+    <span>
+                        &nbsp;: <abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr>            </span>
+</dt>
+<dd>The ID of the user who performed the action.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#property_propertyName">$propertyName</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
+<dd>The name of the property that was changed.</dd>
 
     </dl>
 
@@ -268,16 +295,30 @@ its previous value, and the new value.</p>
 <dd>Constructor to initialize the audit entry.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getAction">getAction()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Gets the action performed.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getChangedAt">getChangedAt()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTime">DateTime</abbr>    </span>
 </dt>
-<dd>Gets the date and time when the change occurred.</dd>
+<dd>Gets the timestamp when the change occurred.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getEntity">getEntity()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Gets the entity type.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getEntityId">getEntityId()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: <abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr>    </span>
 </dt>
 <dd>Gets the ID of the audited entity.</dd>
 
@@ -293,14 +334,21 @@ its previous value, and the new value.</p>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
-<dd>Gets the new value of the property as a JSON string.</dd>
+<dd>Gets the new value of the property.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getOldValue">getOldValue()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
-<dd>Gets the previous value of the property as a JSON string.</dd>
+<dd>Gets the previous value of the property.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getPerformedBy">getPerformedBy()</a>
+    <span>
+                                &nbsp;: <abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr>    </span>
+</dt>
+<dd>Gets the ID of the user who performed the action.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getPropertyName">getPropertyName()</a>
@@ -308,41 +356,6 @@ its previous value, and the new value.</p>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Gets the name of the property that was changed.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#method_setChangedAt">setChangedAt()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Sets the date and time when the change occurred.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#method_setEntityId">setEntityId()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Sets the ID of the audited entity.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#method_setNewValue">setNewValue()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Sets the new value of the property as a JSON string.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#method_setOldValue">setOldValue()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Sets the previous value of the property as a JSON string.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/App-SharedKernel-Audit-AuditTrail.html#method_setPropertyName">setPropertyName()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Sets the name of the property that was changed.</dd>
 
     </dl>
 
@@ -364,6 +377,73 @@ its previous value, and the new value.</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_action">
+        $action
+        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_action" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The action taken, such as &quot;updated&quot; or &quot;deleted&quot;.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$action</span>
+    </code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_action#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">ORM\Column</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>(type=&quot;string&quot;)</p>
+</section>
+
+                                    </dd>
+                                            </dl>
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_action#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &quot;string&quot;
+    </dd>
+    </dl>
+            </section>
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_changedAt">
         $changedAt
         <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_changedAt" class="headerlink"><i class="fas fa-link"></i></a>
@@ -374,11 +454,12 @@ its previous value, and the new value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The timestamp when the change occurred.</p>
+
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -387,9 +468,7 @@ its previous value, and the new value.</p>
     </code>
 
     
-        <section class="phpdocumentor-description"><p>The date and time when the change occurred.</p>
-</section>
-
+    
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
@@ -432,9 +511,9 @@ its previous value, and the new value.</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_entityId">
-        $entityId
-        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_entityId" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_entity">
+        $entity
+        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_entity" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
@@ -442,26 +521,25 @@ its previous value, and the new value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The entity being audited.</p>
+
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$entityId</span>
+    <span class="phpdocumentor-signature__name">$entity</span>
     </code>
 
     
-        <section class="phpdocumentor-description"><p>The ID of the audited entity.</p>
-</section>
-
+    
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_entityId#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_entity#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -479,7 +557,7 @@ its previous value, and the new value.</p>
     
     <section class="phpdocumentor-attributes">
         <h5 class="phpdocumentor-elements__header" id="attributes">
-            Attributes <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_entityId#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+            Attributes <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_entity#attributes" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h5>
                     <dl class="phpdocumentor-argument-list">
@@ -488,6 +566,73 @@ its previous value, and the new value.</p>
     </dt>
         <dd class="phpdocumentor-argument-list__entry">
         $type: &quot;string&quot;
+    </dd>
+    </dl>
+            </section>
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_entityId">
+        $entityId
+        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_entityId" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The ID of the audited entity.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr></span>
+    <span class="phpdocumentor-signature__name">$entityId</span>
+    </code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_entityId#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">ORM\Column</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>(type=&quot;uuid&quot;)</p>
+</section>
+
+                                    </dd>
+                                            </dl>
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_entityId#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &quot;uuid&quot;
     </dd>
     </dl>
             </section>
@@ -510,11 +655,12 @@ its previous value, and the new value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The unique identifier for the audit trail entry.</p>
+
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -523,9 +669,7 @@ its previous value, and the new value.</p>
     </code>
 
     
-        <section class="phpdocumentor-description"><p>The unique identifier for the audit trail entry.</p>
-</section>
-
+    
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
@@ -602,11 +746,12 @@ its previous value, and the new value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The new value of the property as JSON.</p>
+
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -615,9 +760,7 @@ its previous value, and the new value.</p>
     </code>
 
     
-        <section class="phpdocumentor-description"><p>The new value of the property, stored as JSON.</p>
-</section>
-
+    
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
@@ -673,11 +816,12 @@ its previous value, and the new value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The previous value of the property as JSON.</p>
+
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -686,9 +830,7 @@ its previous value, and the new value.</p>
     </code>
 
     
-        <section class="phpdocumentor-description"><p>The previous value of the property, stored as JSON.</p>
-</section>
-
+    
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
@@ -734,6 +876,73 @@ its previous value, and the new value.</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_performedBy">
+        $performedBy
+        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_performedBy" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">50</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The ID of the user who performed the action.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr></span>
+    <span class="phpdocumentor-signature__name">$performedBy</span>
+    </code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_performedBy#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">ORM\Column</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>(type=&quot;uuid&quot;)</p>
+</section>
+
+                                    </dd>
+                                            </dl>
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_performedBy#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &quot;uuid&quot;
+    </dd>
+    </dl>
+            </section>
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_propertyName">
         $propertyName
         <a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_propertyName" class="headerlink"><i class="fas fa-link"></i></a>
@@ -744,11 +953,12 @@ its previous value, and the new value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The name of the property that was changed.</p>
+
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -757,9 +967,7 @@ its previous value, and the new value.</p>
     </code>
 
     
-        <section class="phpdocumentor-description"><p>The name of the property that was changed.</p>
-</section>
-
+    
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
@@ -817,7 +1025,7 @@ its previous value, and the new value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
@@ -825,7 +1033,7 @@ its previous value, and the new value.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entityId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$propertyName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$oldValue</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$newValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entity</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entityId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$performedBy</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$propertyName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$oldValue</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$newValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -834,11 +1042,38 @@ its previous value, and the new value.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$entityId</span>
+                <span class="phpdocumentor-signature__argument__name">$action</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The unique identifier of the entity being audited.</p>
+                    <section class="phpdocumentor-description"><p>The action performed on the entity.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$entity</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The entity being audited.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$entityId</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The ID of the entity being audited.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$performedBy</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The ID of the user who performed the action.</p>
 </section>
 
             </dd>
@@ -883,6 +1118,49 @@ its previous value, and the new value.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getAction">
+        getAction()
+        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getAction" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">212</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Gets the action performed.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The action name.</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getChangedAt">
         getChangedAt()
         <a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getChangedAt" class="headerlink"><i class="fas fa-link"></i></a>
@@ -891,11 +1169,11 @@ its previous value, and the new value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">188</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Gets the date and time when the change occurred.</p>
+        <p class="phpdocumentor-summary">Gets the timestamp when the change occurred.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -914,7 +1192,50 @@ its previous value, and the new value.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\DateTime">DateTime</abbr></span>
                     &mdash;
-                <section class="phpdocumentor-description"><p>The date and time of the change.</p>
+                <section class="phpdocumentor-description"><p>The timestamp of the change.</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getEntity">
+        getEntity()
+        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getEntity" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">222</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Gets the entity type.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getEntity</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The entity being audited.</p>
 </section>
 
             </section>
@@ -934,7 +1255,7 @@ its previous value, and the new value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -942,7 +1263,7 @@ its previous value, and the new value.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getEntityId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getEntityId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -955,7 +1276,7 @@ its previous value, and the new value.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr></span>
                     &mdash;
                 <section class="phpdocumentor-description"><p>The ID of the audited entity.</p>
 </section>
@@ -977,7 +1298,7 @@ its previous value, and the new value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">94</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
@@ -1020,11 +1341,11 @@ its previous value, and the new value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">192</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Gets the new value of the property as a JSON string.</p>
+        <p class="phpdocumentor-summary">Gets the new value of the property.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1043,7 +1364,7 @@ its previous value, and the new value.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string|null</span>
                     &mdash;
-                <section class="phpdocumentor-description"><p>The new value of the property.</p>
+                <section class="phpdocumentor-description"><p>The new value as JSON.</p>
 </section>
 
             </section>
@@ -1063,11 +1384,11 @@ its previous value, and the new value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">146</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Gets the previous value of the property as a JSON string.</p>
+        <p class="phpdocumentor-summary">Gets the previous value of the property.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1086,7 +1407,50 @@ its previous value, and the new value.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string|null</span>
                     &mdash;
-                <section class="phpdocumentor-description"><p>The previous value of the property.</p>
+                <section class="phpdocumentor-description"><p>The previous value as JSON.</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getPerformedBy">
+        getPerformedBy()
+        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getPerformedBy" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">162</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Gets the ID of the user who performed the action.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getPerformedBy</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The ID of the user who performed the action.</p>
 </section>
 
             </section>
@@ -1106,7 +1470,7 @@ its previous value, and the new value.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
     </aside>
 
@@ -1129,246 +1493,11 @@ its previous value, and the new value.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
                     &mdash;
-                <section class="phpdocumentor-description"><p>The name of the property that was changed.</p>
+                <section class="phpdocumentor-description"><p>The name of the property.</p>
 </section>
 
             </section>
 
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setChangedAt">
-        setChangedAt()
-        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_setChangedAt" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">199</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Sets the date and time when the change occurred.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setChangedAt</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$changedAt</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$changedAt</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The date and time of the change.</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setEntityId">
-        setEntityId()
-        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_setEntityId" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">115</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Sets the ID of the audited entity.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setEntityId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entityId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$entityId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The ID of the audited entity.</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setNewValue">
-        setNewValue()
-        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_setNewValue" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">178</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Sets the new value of the property as a JSON string.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setNewValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$newValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$newValue</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The new value of the property.</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setOldValue">
-        setOldValue()
-        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_setOldValue" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">157</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Sets the previous value of the property as a JSON string.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setOldValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$oldValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$oldValue</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The previous value of the property.</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setPropertyName">
-        setPropertyName()
-        <a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_setPropertyName" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="SharedKernel/Audit/AuditTrail.php"><a href="files/sharedkernel-audit-audittrail.html"><abbr title="SharedKernel/Audit/AuditTrail.php">AuditTrail.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">136</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Sets the name of the property that was changed.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setPropertyName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$propertyName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$propertyName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The name of the property that was changed.</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-    
-
-    
 </article>
             </section>
 
@@ -1483,11 +1612,14 @@ its previous value, and the new value.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_action">$action</a></li>
                                                     <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_changedAt">$changedAt</a></li>
+                                                    <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_entity">$entity</a></li>
                                                     <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_entityId">$entityId</a></li>
                                                     <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_id">$id</a></li>
                                                     <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_newValue">$newValue</a></li>
                                                     <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_oldValue">$oldValue</a></li>
+                                                    <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_performedBy">$performedBy</a></li>
                                                     <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#property_propertyName">$propertyName</a></li>
                                             </ul>
                 </li>
@@ -1496,17 +1628,15 @@ its previous value, and the new value.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getAction">getAction()</a></li>
                                             <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getChangedAt">getChangedAt()</a></li>
+                                            <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getEntity">getEntity()</a></li>
                                             <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getEntityId">getEntityId()</a></li>
                                             <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getId">getId()</a></li>
                                             <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getNewValue">getNewValue()</a></li>
                                             <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getOldValue">getOldValue()</a></li>
+                                            <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getPerformedBy">getPerformedBy()</a></li>
                                             <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_getPropertyName">getPropertyName()</a></li>
-                                            <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_setChangedAt">setChangedAt()</a></li>
-                                            <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_setEntityId">setEntityId()</a></li>
-                                            <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_setNewValue">setNewValue()</a></li>
-                                            <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_setOldValue">setOldValue()</a></li>
-                                            <li class=""><a href="classes/App-SharedKernel-Audit-AuditTrail.html#method_setPropertyName">setPropertyName()</a></li>
                                     </ul>
             </li>
                     </ul>

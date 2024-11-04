@@ -136,16 +136,37 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/Service/SessionService.php"><a href="files/domain-usermanagement-service-sessionservice.html"><abbr title="Domain/UserManagement/Service/SessionService.php">SessionService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/Session/Service/SessionService.php"><a href="files/domain-usermanagement-session-service-sessionservice.html"><abbr title="Domain/UserManagement/Session/Service/SessionService.php">SessionService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Service for managing user sessions within the system.</p>
+            <p class="phpdocumentor-summary">Service to manage user sessions and device verification for security.</p>
 
 
-    <section class="phpdocumentor-description"><p>Handles session creation, device management, and session closures.</p>
+    <section class="phpdocumentor-description"><p>Attributes:</p>
+<ul>
+<li>UserLoggedIn Event: Emits when a user successfully logs in.</li>
+<li>Device Verification: Checks if the login device is new.</li>
+</ul>
+<p>Event Emission:</p>
+<ul>
+<li>Each entity (User, Device, Session) manages its events via EventRaiserTrait.</li>
+<li>UserLoggedIn is emitted by User to handle post-login processes.</li>
+</ul>
+<p>Usage Workflow:</p>
+<ul>
+<li>A user logs in, triggering Session creation.</li>
+<li>The system verifies if the device is new for the user.</li>
+<li>User emits the UserLoggedIn event to trigger downstream actions.</li>
+</ul>
+<p>See Also:</p>
+<ul>
+<li>UserLoggedIn: Event triggered after a user login.</li>
+<li>Device: Represents user devices in the system.</li>
+<li>Session: Handles user sessions and login tracking.</li>
+</ul>
 </section>
 
 
@@ -176,25 +197,18 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/App-Domain-UserManagement-Service-SessionService.html#method_closeAllSessions">closeAllSessions()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Closes all active sessions for the given user.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/App-Domain-UserManagement-Service-SessionService.html#method_createSession">createSession()</a>
     <span>
                                 &nbsp;: <a href="classes/App-Domain-UserManagement-Entity-Session.html"><abbr title="\App\Domain\UserManagement\Entity\Session">Session</abbr></a>    </span>
 </dt>
-<dd>Creates a new session for the given user and associates it with a device.</dd>
+<dd>Starts a new session for the user, checking device and emitting login events.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/App-Domain-UserManagement-Service-SessionService.html#method_isNewDevice">isNewDevice()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd>Checks if a device is new for the specified user.</dd>
+<dd>Determines if the device is new for the user.</dd>
 
     </dl>
 
@@ -216,70 +230,23 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_closeAllSessions">
-        closeAllSessions()
-        <a href="classes/App-Domain-UserManagement-Service-SessionService.html#method_closeAllSessions" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/Service/SessionService.php"><a href="files/domain-usermanagement-service-sessionservice.html"><abbr title="Domain/UserManagement/Service/SessionService.php">SessionService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">65</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Closes all active sessions for the given user.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">closeAllSessions</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Domain-UserManagement-Entity-User.html"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$user</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Domain-UserManagement-Entity-User.html"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The user whose sessions are to be closed.</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_createSession">
         createSession()
         <a href="classes/App-Domain-UserManagement-Service-SessionService.html#method_createSession" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/Service/SessionService.php"><a href="files/domain-usermanagement-service-sessionservice.html"><abbr title="Domain/UserManagement/Service/SessionService.php">SessionService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/Session/Service/SessionService.php"><a href="files/domain-usermanagement-session-service-sessionservice.html"><abbr title="Domain/UserManagement/Session/Service/SessionService.php">SessionService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Creates a new session for the given user and associates it with a device.</p>
+        <p class="phpdocumentor-summary">Starts a new session for the user, checking device and emitting login events.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">createSession</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Domain-UserManagement-Entity-User.html"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Domain-UserManagement-Entity-Device.html"><abbr title="\App\Domain\UserManagement\Entity\Device">Device</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$device</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/App-Domain-UserManagement-Entity-Session.html"><abbr title="\App\Domain\UserManagement\Entity\Session">Session</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">createSession</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$deviceId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/App-Domain-UserManagement-Entity-Session.html"><abbr title="\App\Domain\UserManagement\Entity\Session">Session</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -288,22 +255,18 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$user</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Domain-UserManagement-Entity-User.html"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></a></span>
+                <span class="phpdocumentor-signature__argument__name">$userId</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The user for whom the session is created.</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$device</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Domain-UserManagement-Entity-Device.html"><abbr title="\App\Domain\UserManagement\Entity\Device">Device</abbr></a></span>
+                <span class="phpdocumentor-signature__argument__name">$deviceId</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\Uid\Uuid">Uuid</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The device information for this session.</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -315,7 +278,7 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/App-Domain-UserManagement-Entity-Session.html"><abbr title="\App\Domain\UserManagement\Entity\Session">Session</abbr></a></span>
                     &mdash;
-                <section class="phpdocumentor-description"><p>The created session object.</p>
+                <section class="phpdocumentor-description"><p>The newly created session.</p>
 </section>
 
             </section>
@@ -333,42 +296,39 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/Service/SessionService.php"><a href="files/domain-usermanagement-service-sessionservice.html"><abbr title="Domain/UserManagement/Service/SessionService.php">SessionService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/Session/Service/SessionService.php"><a href="files/domain-usermanagement-session-service-sessionservice.html"><abbr title="Domain/UserManagement/Session/Service/SessionService.php">SessionService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Checks if a device is new for the specified user.</p>
+        <p class="phpdocumentor-summary">Determines if the device is new for the user.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isNewDevice</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Domain-UserManagement-Entity-User.html"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Domain-UserManagement-Entity-Device.html"><abbr title="\App\Domain\UserManagement\Entity\Device">Device</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$device</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">isNewDevice</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\App\Domain\UserManagement\Entity\Device">Device</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$device</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>This method verifies whether a device has been previously registered for the user by checking
-the device's unique identifier and fingerprint data against all devices associated with the user's sessions.</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$user</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Domain-UserManagement-Entity-User.html"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The user to check the device for.</p>
+                    <section class="phpdocumentor-description"><p>The user initiating the session.</p>
 </section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$device</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Domain-UserManagement-Entity-Device.html"><abbr title="\App\Domain\UserManagement\Entity\Device">Device</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\App\Domain\UserManagement\Entity\Device">Device</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The device to check.</p>
+                    <section class="phpdocumentor-description"><p>The device being used.</p>
 </section>
 
             </dd>
@@ -382,7 +342,7 @@ the device's unique identifier and fingerprint data against all devices associat
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
                     &mdash;
-                <section class="phpdocumentor-description"><p>True if the device is new for the user, false otherwise.</p>
+                <section class="phpdocumentor-description"><p>True if the device is new for the user; otherwise, false.</p>
 </section>
 
             </section>
@@ -394,7 +354,7 @@ the device's unique identifier and fingerprint data against all devices associat
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/Domain/UserManagement/Service/SessionService.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/Domain/UserManagement/Session/Service/SessionService.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -501,7 +461,6 @@ the device's unique identifier and fingerprint data against all devices associat
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/App-Domain-UserManagement-Service-SessionService.html#method_closeAllSessions">closeAllSessions()</a></li>
                                             <li class=""><a href="classes/App-Domain-UserManagement-Service-SessionService.html#method_createSession">createSession()</a></li>
                                             <li class=""><a href="classes/App-Domain-UserManagement-Service-SessionService.html#method_isNewDevice">isNewDevice()</a></li>
                                     </ul>

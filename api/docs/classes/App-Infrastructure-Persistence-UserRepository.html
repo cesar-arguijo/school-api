@@ -129,6 +129,9 @@
                             </ul>
         </div>
     
+            <span class="phpdocumentor-element__implements">
+            implements
+                            <a href="classes/App-Domain-UserManagement-User-Repository-UserRepositoryInterface.html"><abbr title="\App\Domain\UserManagement\User\Repository\UserRepositoryInterface">UserRepositoryInterface</abbr></a>,                             <a href="classes/App-Domain-UserManagement-User-DataProvider-UserDataProviderInterface.html"><abbr title="\App\Domain\UserManagement\User\DataProvider\UserDataProviderInterface">UserDataProviderInterface</abbr></a>                    </span>
     
     </h2>
 
@@ -140,68 +143,18 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Infrastructure/Persistence/UserRepository.php"><a href="files/infrastructure-persistence-userrepository.html"><abbr title="Infrastructure/Persistence/UserRepository.php">UserRepository.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">UserRepository</p>
+            <p class="phpdocumentor-summary">Class UserRepository</p>
 
 
-    <section class="phpdocumentor-description"><p>Manages <code class="prettyprint">User</code> entities by providing specific data retrieval methods
-and centralizing user-related data access logic.</p>
-<p><strong>Purpose</strong></p>
-<p>This repository encapsulates data access logic for <code class="prettyprint">User</code> entities. It extends BaseEntityRepository
-to leverage common repository methods and enriches them with user-specific data access functions.</p>
-<p><strong>Methods Overview</strong></p>
-<ul>
-<li>
-<em>findByEmail</em>: Finds a user by their email address.</li>
-<li>
-<em>findByRole</em>: Retrieves a list of users with a specified role.</li>
-<li>
-<em>findRecentActiveUsers</em>: Retrieves a list of active users who registered in the last 30 days.</li>
-</ul>
-<p><strong>Usage Workflow</strong></p>
-<ul>
-<li>
-<em>Dependency Injection</em>: Inject the <code class="prettyprint">UserRepository</code> where user data access is required, like in application services or domain logic.</li>
-<li>
-<em>Fetching Users by Email</em>: Use <code class="prettyprint">findByEmail</code> to locate users for operations like authentication or profile management.</li>
-<li>
-<em>Retrieving Users by Role</em>: Leverage <code class="prettyprint">findByRole</code> to segment users by role, which is useful in role-based access control or reporting.</li>
-<li>
-<em>Identifying Recent Active Users</em>: Use <code class="prettyprint">findRecentActiveUsers</code> for insights into new active users, supporting user engagement analytics.</li>
-</ul>
+    <section class="phpdocumentor-description"><p>Implements UserRepositoryInterface, providing custom user operations.
+Extends BaseEntityRepository for common CRUD and soft delete functionalities.</p>
 </section>
 
 
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/App-Infrastructure-Persistence-UserRepository.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/App-Domain-UserManagement-Entity-User.html"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"><p>The <code class="prettyprint">User</code> entity managed by this repository.</p>
-</section>
-
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/App-Infrastructure-Persistence-BaseEntityRepository.html"><abbr title="\App\Infrastructure\Persistence\BaseEntityRepository">BaseEntityRepository</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"><p>The base repository that provides common data access methods.</p>
-</section>
-
-                                    </dd>
-                                            </dl>
 
 
 
@@ -215,6 +168,13 @@ to leverage common repository methods and enriches them with user-specific data 
 
 
 
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="classes/App-Infrastructure-Persistence-UserRepository.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/App-Domain-UserManagement-User-Repository-UserRepositoryInterface.html"><abbr title="\App\Domain\UserManagement\User\Repository\UserRepositoryInterface">UserRepositoryInterface</abbr></a></dt><dd>UserRepositoryInterface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/App-Domain-UserManagement-User-DataProvider-UserDataProviderInterface.html"><abbr title="\App\Domain\UserManagement\User\DataProvider\UserDataProviderInterface">UserDataProviderInterface</abbr></a></dt><dd>UserDataProviderInterface</dd>    </dl>
 
 
 
@@ -278,7 +238,7 @@ to leverage common repository methods and enriches them with user-specific data 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/App-Infrastructure-Persistence-UserRepository.html#method_findByEmail">findByEmail()</a>
     <span>
-                                &nbsp;: <a href="classes/App-Domain-UserManagement-Entity-User.html"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></a>|null    </span>
+                                &nbsp;: <a href="classes/App-Domain-UserManagement-User-Entity-User.html"><abbr title="\App\Domain\UserManagement\User\Entity\User">User</abbr></a>|null    </span>
 </dt>
 <dd>Finds a user by their email address.</dd>
 
@@ -288,20 +248,6 @@ to leverage common repository methods and enriches them with user-specific data 
                                 &nbsp;: <a href="classes/App-Domain-Common-Entity-EntityBase.html"><abbr title="\App\Domain\Common\Entity\EntityBase">EntityBase</abbr></a>|null    </span>
 </dt>
 <dd>Finds an entity by its unique identifier.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/App-Infrastructure-Persistence-UserRepository.html#method_findByRole">findByRole()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, <a href="classes/App-Domain-UserManagement-Entity-User.html"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></a>&gt;    </span>
-</dt>
-<dd>Finds users by role.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/App-Infrastructure-Persistence-UserRepository.html#method_findRecentActiveUsers">findRecentActiveUsers()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, <a href="classes/App-Domain-UserManagement-Entity-User.html"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></a>&gt;    </span>
-</dt>
-<dd>Finds active users registered in the last 30 days.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/App-Infrastructure-Persistence-BaseEntityRepository.html#method_restore">restore()</a>
@@ -435,7 +381,7 @@ to leverage common repository methods and enriches them with user-specific data 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Infrastructure/Persistence/UserRepository.php"><a href="files/infrastructure-persistence-userrepository.html"><abbr title="Infrastructure/Persistence/UserRepository.php">UserRepository.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -456,7 +402,7 @@ to leverage common repository methods and enriches them with user-specific data 
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\ORM\EntityManagerInterface">EntityManagerInterface</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The entity manager to manage database operations.</p>
+                    <section class="phpdocumentor-description"><p>The entity manager for database operations.</p>
 </section>
 
             </dd>
@@ -641,7 +587,7 @@ to leverage common repository methods and enriches them with user-specific data 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Infrastructure/Persistence/UserRepository.php"><a href="files/infrastructure-persistence-userrepository.html"><abbr title="Infrastructure/Persistence/UserRepository.php">UserRepository.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -649,7 +595,7 @@ to leverage common repository methods and enriches them with user-specific data 
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">findByEmail</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$email</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/App-Domain-UserManagement-Entity-User.html"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></a>|null</span></code>
+                    <span class="phpdocumentor-signature__name">findByEmail</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$email</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/App-Domain-UserManagement-User-Entity-User.html"><abbr title="\App\Domain\UserManagement\User\Entity\User">User</abbr></a>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -674,7 +620,7 @@ to leverage common repository methods and enriches them with user-specific data 
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/App-Domain-UserManagement-Entity-User.html"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></a>|null</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/App-Domain-UserManagement-User-Entity-User.html"><abbr title="\App\Domain\UserManagement\User\Entity\User">User</abbr></a>|null</span>
                     &mdash;
                 <section class="phpdocumentor-description"><p>The user with the specified email, or null if not found.</p>
 </section>
@@ -732,104 +678,6 @@ to leverage common repository methods and enriches them with user-specific data 
         <span class="phpdocumentor-signature__response_type"><a href="classes/App-Domain-Common-Entity-EntityBase.html"><abbr title="\App\Domain\Common\Entity\EntityBase">EntityBase</abbr></a>|null</span>
                     &mdash;
                 <section class="phpdocumentor-description"><p>The entity, or null if not found.</p>
-</section>
-
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_findByRole">
-        findByRole()
-        <a href="classes/App-Infrastructure-Persistence-UserRepository.html#method_findByRole" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Infrastructure/Persistence/UserRepository.php"><a href="files/infrastructure-persistence-userrepository.html"><abbr title="Infrastructure/Persistence/UserRepository.php">UserRepository.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">64</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Finds users by role.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">findByRole</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$role</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/App-Domain-UserManagement-Entity-User.html"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></a>&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$role</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The role to filter users by.</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/App-Domain-UserManagement-Entity-User.html"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></a>&gt;</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>A list of users with the specified role.</p>
-</section>
-
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_findRecentActiveUsers">
-        findRecentActiveUsers()
-        <a href="classes/App-Infrastructure-Persistence-UserRepository.html#method_findRecentActiveUsers" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Infrastructure/Persistence/UserRepository.php"><a href="files/infrastructure-persistence-userrepository.html"><abbr title="Infrastructure/Persistence/UserRepository.php">UserRepository.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">74</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Finds active users registered in the last 30 days.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">findRecentActiveUsers</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/App-Domain-UserManagement-Entity-User.html"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></a>&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/App-Domain-UserManagement-Entity-User.html"><abbr title="\App\Domain\UserManagement\Entity\User">User</abbr></a>&gt;</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>A list of recently registered active users.</p>
 </section>
 
             </section>
@@ -1103,8 +951,6 @@ to leverage common repository methods and enriches them with user-specific data 
                                             <li class=""><a href="classes/App-Infrastructure-Persistence-BaseEntityRepository.html#method_findAll">findAll()</a></li>
                                             <li class=""><a href="classes/App-Infrastructure-Persistence-UserRepository.html#method_findByEmail">findByEmail()</a></li>
                                             <li class=""><a href="classes/App-Infrastructure-Persistence-BaseEntityRepository.html#method_findById">findById()</a></li>
-                                            <li class=""><a href="classes/App-Infrastructure-Persistence-UserRepository.html#method_findByRole">findByRole()</a></li>
-                                            <li class=""><a href="classes/App-Infrastructure-Persistence-UserRepository.html#method_findRecentActiveUsers">findRecentActiveUsers()</a></li>
                                             <li class=""><a href="classes/App-Infrastructure-Persistence-BaseEntityRepository.html#method_restore">restore()</a></li>
                                             <li class=""><a href="classes/App-Infrastructure-Persistence-BaseEntityRepository.html#method_save">save()</a></li>
                                             <li class=""><a href="classes/App-Infrastructure-Persistence-BaseEntityRepository.html#method_softDelete">softDelete()</a></li>

@@ -1,0 +1,62 @@
+// Contexto delimitado para el subdominio User
+BoundedContext UserManagement {
+   
+   // Agregado central User
+   Aggregate User {
+      
+      // Entidad principal User
+      Entity User {
+         - userId: UUID
+         - username: String
+         - email: String
+         - passwordHash: Password
+         - role: Role
+         - isActive: Boolean
+         - lastLogin: DateTime
+      }
+
+      // Entidad relacionada Device
+      Entity Device {
+         - deviceId: UUID
+         - deviceType: String
+         - fingerprint: String
+      }
+
+      // Eventos que se emiten desde el agregado User
+      DomainEvent UserRegistered {
+         + userId: UUID
+         + username: String
+         + email: String
+      }
+
+      DomainEvent PasswordChanged {
+         + userId: UUID
+         + timestamp: DateTime
+      }
+
+      DomainEvent UserRoleChanged {
+         + userId: UUID
+         + oldRole: Role
+         + newRole: Role
+      }
+   }
+}
+
+// Relación entre UserManagement y otros contextos, como Notification o Auth
+// indicando que UserManagement notifica a estos contextos a través de eventos
+
+BoundedContext Notification {
+   Aggregate Notification {
+      DomainEvent NewDeviceDetected {
+         + userId: UUID
+         + deviceId: UUID
+      }
+
+      DomainEvent SessionLimitExceeded {
+         + userId: UUID
+         + timestamp: DateTime
+      }
+   }
+}
+
+UserManagement [UserContext] -> Notification [AlertContext] : Notify

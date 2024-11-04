@@ -139,15 +139,30 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/Entity/Device.php"><a href="files/domain-usermanagement-entity-device.html"><abbr title="Domain/UserManagement/Entity/Device.php">Device.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/User/Entity/Device.php"><a href="files/domain-usermanagement-user-entity-device.html"><abbr title="Domain/UserManagement/User/Entity/Device.php">Device.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Entity representing a user device.</p>
+            <p class="phpdocumentor-summary">Device</p>
 
 
+    <section class="phpdocumentor-description"><p>Represents a user's device, uniquely identified and categorized by type.
+Used to associate sessions or track access points for security purposes.</p>
+<p><strong>Attributes</strong></p>
+<ul>
+<li>
+<code class="prettyprint">deviceIdentifier</code>: A unique identifier for the device, ensuring one-to-one tracking.</li>
+<li>
+<code class="prettyprint">deviceType</code>: The category of the device, such as &quot;mobile&quot; or &quot;desktop&quot;.</li>
+<li>
+<code class="prettyprint">fingerprint</code>: Optional, additional identifying data to uniquely verify the device.</li>
+</ul>
+<p><strong>Usage</strong>
+This entity enables session management systems to distinguish devices used by users,
+which is essential for tracking logins, detecting new devices, or restricting access based on device identity.</p>
+</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -228,7 +243,7 @@
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd>A unique identifier for the device, such as a UUID or persistent token.</dd>
+<dd>Unique identifier for the device, such as a UUID or persistent token.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a class="" href="classes/App-Domain-UserManagement-Entity-Device.html#property_deviceType">$deviceType</a>
@@ -248,7 +263,7 @@
     <span>
                         &nbsp;: string|null            </span>
 </dt>
-<dd>Optional: Browser fingerprint or other identifying data for additional verification.</dd>
+<dd>Optional browser fingerprint or other identifying data.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a class="" href="classes/App-Domain-Common-Entity-EntityBase.html#property_id">$id</a>
@@ -316,6 +331,13 @@
                                 &nbsp;: void    </span>
 </dt>
 <dd>{@inheritDoc}</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/App-Domain-UserManagement-Entity-Device.html#method_equals">equals()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Checks if this device is equal to another device.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/App-SharedKernel-Trait-TimestampTrait.html#method_getCreatedAt">getCreatedAt()</a>
@@ -523,13 +545,13 @@
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/Entity/Device.php"><a href="files/domain-usermanagement-entity-device.html"><abbr title="Domain/UserManagement/Entity/Device.php">Device.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/User/Entity/Device.php"><a href="files/domain-usermanagement-user-entity-device.html"><abbr title="Domain/UserManagement/User/Entity/Device.php">Device.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">A unique identifier for the device, such as a UUID or persistent token.</p>
+        <p class="phpdocumentor-summary">Unique identifier for the device, such as a UUID or persistent token.</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -593,9 +615,9 @@
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/Entity/Device.php"><a href="files/domain-usermanagement-entity-device.html"><abbr title="Domain/UserManagement/Entity/Device.php">Device.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/User/Entity/Device.php"><a href="files/domain-usermanagement-user-entity-device.html"><abbr title="Domain/UserManagement/User/Entity/Device.php">Device.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -698,13 +720,13 @@
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/Entity/Device.php"><a href="files/domain-usermanagement-entity-device.html"><abbr title="Domain/UserManagement/Entity/Device.php">Device.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/User/Entity/Device.php"><a href="files/domain-usermanagement-user-entity-device.html"><abbr title="Domain/UserManagement/User/Entity/Device.php">Device.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Optional: Browser fingerprint or other identifying data for additional verification.</p>
+        <p class="phpdocumentor-summary">Optional browser fingerprint or other identifying data.</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -713,7 +735,10 @@
     <span class="phpdocumentor-signature__name">$fingerprint</span>
     </code>
 
-    
+        <section class="phpdocumentor-description"><p>This may include unique identifying information from the device’s browser
+or environment, allowing for additional verification when needed.</p>
+</section>
+
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -1079,9 +1104,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/Entity/Device.php"><a href="files/domain-usermanagement-entity-device.html"><abbr title="Domain/UserManagement/Entity/Device.php">Device.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/User/Entity/Device.php"><a href="files/domain-usermanagement-user-entity-device.html"><abbr title="Domain/UserManagement/User/Entity/Device.php">Device.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -1269,6 +1294,64 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_equals">
+        equals()
+        <a href="classes/App-Domain-UserManagement-Entity-Device.html#method_equals" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/User/Entity/Device.php"><a href="files/domain-usermanagement-user-entity-device.html"><abbr title="Domain/UserManagement/User/Entity/Device.php">Device.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">114</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Checks if this device is equal to another device.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">equals</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Domain-UserManagement-Entity-Device.html"><abbr title="\App\Domain\UserManagement\Entity\Device">Device</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$otherDevice</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Devices are considered equal if they share the same device identifier,
+type, and optional fingerprint.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$otherDevice</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Domain-UserManagement-Entity-Device.html"><abbr title="\App\Domain\UserManagement\Entity\Device">Device</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The device to compare with.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>True if the devices are equal, false otherwise.</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getCreatedAt">
         getCreatedAt()
         <a href="classes/App-SharedKernel-Trait-TimestampTrait.html#method_getCreatedAt" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1314,9 +1397,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/Entity/Device.php"><a href="files/domain-usermanagement-entity-device.html"><abbr title="Domain/UserManagement/Entity/Device.php">Device.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/User/Entity/Device.php"><a href="files/domain-usermanagement-user-entity-device.html"><abbr title="Domain/UserManagement/User/Entity/Device.php">Device.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -1357,9 +1440,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/Entity/Device.php"><a href="files/domain-usermanagement-entity-device.html"><abbr title="Domain/UserManagement/Entity/Device.php">Device.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/User/Entity/Device.php"><a href="files/domain-usermanagement-user-entity-device.html"><abbr title="Domain/UserManagement/User/Entity/Device.php">Device.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -1439,9 +1522,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/Entity/Device.php"><a href="files/domain-usermanagement-entity-device.html"><abbr title="Domain/UserManagement/Entity/Device.php">Device.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Domain/UserManagement/User/Entity/Device.php"><a href="files/domain-usermanagement-user-entity-device.html"><abbr title="Domain/UserManagement/User/Entity/Device.php">Device.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -1904,7 +1987,7 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/Domain/UserManagement/Entity/Device.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/Domain/UserManagement/User/Entity/Device.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -2031,6 +2114,7 @@
                                             <li class=""><a href="classes/App-SharedKernel-Audit-AuditableTrait.html#method_auditChanges">auditChanges()</a></li>
                                             <li class=""><a href="classes/App-SharedKernel-Trait-EventRaiserTrait.html#method_clearEvents">clearEvents()</a></li>
                                             <li class=""><a href="classes/App-SharedKernel-Trait-SoftDeleteTrait.html#method_delete">delete()</a></li>
+                                            <li class=""><a href="classes/App-Domain-UserManagement-Entity-Device.html#method_equals">equals()</a></li>
                                             <li class=""><a href="classes/App-SharedKernel-Trait-TimestampTrait.html#method_getCreatedAt">getCreatedAt()</a></li>
                                             <li class=""><a href="classes/App-Domain-UserManagement-Entity-Device.html#method_getDeviceIdentifier">getDeviceIdentifier()</a></li>
                                             <li class=""><a href="classes/App-Domain-UserManagement-Entity-Device.html#method_getDeviceType">getDeviceType()</a></li>

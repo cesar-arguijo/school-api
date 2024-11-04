@@ -26,3 +26,5 @@
 ###< phpunit/phpunit ###
 
 /.phpdoc
+/docs
+/docs-tests

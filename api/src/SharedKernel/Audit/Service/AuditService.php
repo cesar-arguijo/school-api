@@ -3,7 +3,7 @@
 namespace App\SharedKernel\Audit;
 
 use App\Domain\Common\Entity\EntityBase;
-use App\Domain\UserManagement\Entity\User;
+use App\Domain\UserManagement\User\Entity\User;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Uid\Uuid;
 
@@ -33,8 +33,9 @@ class AuditService
      * Logs an action taken on an entity, recording details in the audit trail.
      *
      * @param string $action The action performed (e.g., "created", "updated", "deleted").
-     * @param EntityBase $entity The entity affected by the action.
-     * @param User $performedBy The user who performed the action.
+     * @param string $entity The entity affected by the action.
+     * @param Uuid $entityId The Id of the entity affected by the action.
+     * @param Uuid $performedBy The user who performed the action.
      * @param string $propertyName The name of the property that was changed (if applicable).
      * @param mixed|null $oldValue The previous value of the property.
      * @param mixed|null $newValue The new value of the property.
@@ -43,17 +44,18 @@ class AuditService
      */
     public function logChange(
         string $action,
-        EntityBase $entity,
-        User $performedBy,
+        string $entity,
+        Uuid $entityId,
+        Uuid $performedBy,
         string $propertyName,
         $oldValue = null,
         $newValue = null
     ): void {
         $auditEntry = new AuditTrail(
             action: $action,
-            entity: get_class($entity),
-            entityId: Uuid::fromString((string)$entity->getId()),
-            performedBy: Uuid::fromString((string)$performedBy->getId()),
+            entity: $entity,
+            entityId: $entityId,
+            performedBy: $performedBy,
             propertyName: $propertyName,
             oldValue: $oldValue,
             newValue: $newValue
@@ -67,16 +69,23 @@ class AuditService
      * Logs a lifecycle event, such as session start or end, without specific property changes.
      *
      * @param string $action The lifecycle event (e.g., "SessionStarted", "SessionEnded").
-     * @param EntityBase $entity The entity associated with the lifecycle event.
-     * @param User $performedBy The user involved in the event.
+     * @param string $entity The entity affected by the action.
+     * @param Uuid $entityId The Id of the entity affected by the action.
+     * @param Uuid $performedBy The user who performed the action.
      *
      * @return void
      */
-    public function logLifecycleEvent(string $action, EntityBase $entity, User $performedBy): void
+    public function logLifecycleEvent(
+        string $action, 
+        string $entity,
+        Uuid $entityId,
+        Uuid $performedBy,
+    ): void
     {
         $this->logChange(
             action: $action,
             entity: $entity,
+            entityId: $entityId,
             performedBy: $performedBy,
             propertyName: 'lifecycle',
             oldValue: null,
